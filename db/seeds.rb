@@ -6,6 +6,11 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+
+puts "creating specialty"
+
+specialty = ["Ostéopathie", "Chiropraxie", "Hypnose", "Naturopathie", "Massage", "Réfléxologie", "Psychothérapie", "Sophrologie", "Méditation", "Nutrition"]
+
 # puts "creating user"
 
 # user0 = User.create!(name: "Pierre", email: "pierregigolo@gmail.com", password: "biloute")
@@ -27,3 +32,4 @@
 
 
 # puts "creating user done"
+
