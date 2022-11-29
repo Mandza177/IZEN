@@ -9,11 +9,11 @@
 
 puts "creating specialty"
 
-specialty = ["Ostéopathie", "Chiropraxie", "Hypnose", "Naturopathie", "Massage", "Réfléxologie", "Psychothérapie", "Sophrologie", "Méditation", "Nutrition"]
+specialty = ["Ostéopathie", "Chiropraxie", "Hypnose", "Naturopathie", "Massage", "Réfléxologie", "Psychothérapie", "Sophrologie", "Méditation", "Art thérapeute"]
 
-# puts "creating user"
+puts "creating user"
 
-# user0 = User.create!(name: "Pierre", email: "pierregigolo@gmail.com", password: "biloute")
+user0 = User.create!(name: "Pierre", email: "pierregigolo@gmail.com", password: "biloute")
 
 # e_table "users", force: :cascade do |t|
 #   t.string "email", default: "", null: false
@@ -32,4 +32,3 @@ specialty = ["Ostéopathie", "Chiropraxie", "Hypnose", "Naturopathie", "Massage"
 
 
 # puts "creating user done"
-
