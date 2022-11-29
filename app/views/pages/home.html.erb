@@ -1,2 +1,15 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+  <div>
+    <!-- img ICI : LE LOGO -->
+    <h1>Izen</h1>
+  </div>
+  <div>
+    <%= form_with url: movies_path, method: :get do %>
+    <%=
+      text_field_tag :query, params[:query], class: "form-control", placeholder: "Spécialité, trouble, thérapeuthe"
+      text_field_tag :locations, params[:locations], class: "form-control", placeholder: "Où ?"
+    %>
+    <%= submit_tag "Search", class: "btn btn-primary" %>
+  <% end %>
+  </div>
+</div>
