@@ -6,5 +6,5 @@ class Pratician < ApplicationRecord
   validates :job, presence: true
   validates :email, uniqueness: true
 
-
+  has_one_attached :photo
 end
