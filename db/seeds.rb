@@ -1,3 +1,5 @@
+require "open-uri"
+
 puts "destroy users and praticians"
 
 User.destroy_all
@@ -28,7 +30,7 @@ puts "creating pratician"
 p0 = Pratician.create!(first_name: "Yann", last_name: "Lecocq", job: "Hypnose", phone_number: "06.09.82.16.04", email: "yannlecocqhypnose44@gmail.com", address: "62 Bd Jean Ingres 44300 St Herblain")
 p1 = Pratician.create!(first_name: "Edith", last_name: "Wernert", job: "Hypnose", phone_number: "07.64.48.22.11", email: "", address: "62 Bd Jean Ingres 44300 St Herblain")
 p2 = Pratician.create!(first_name: "Laurence", last_name: "Bobet", job: "Hypnose", phone_number: "07.49.31.25.49", email: "laurence.bobet@gmail.com", address: "62 Bd Jean Ingres 44300 St Herblain")
-p3 = Pratician.create!(first_name: "Claire", last_name: "Pelletier", job: "Hypnose", phone_number: "", email: "claire.pelletier@gmail.com", address: "62 Bd Jean Ingres 44300 St Herblain")
+p3 = Pratician.create!(first_name: "Claire", last_name: "Pelletier", job: "Hypnose", phone_number: "06.85.62.14.42", email: "claire.pelletier@gmail.com", address: "62 Bd Jean Ingres 44300 St Herblain")
 p4 = Pratician.create!(first_name: "Gilles", last_name: "Chehade", job: "Hypnose", phone_number: " 07.66.39.73.94", email: "gilles@hypno.cat", address: "62 Bd Jean Ingres 44300 St Herblain")
 
 p5 = Pratician.create!(first_name: "Georges", last_name: "ABOU KHALIL", job: "Osth√©opathie", phone_number: "02.40.73.40.99", email: "aboukhalil@hotmail.fr", address: "6, rue de la Fauvette 44100 NANTES")
@@ -88,9 +90,7 @@ p25 = Pratician.create!(first_name: "Ericka", last_name: "Robine", job: "Sonoth√
 puts "creating pratician done"
 
 # active storage seeds images
-# require "open-uri"
 
-# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/NES-Console-Set.jpg/1200px-NES-Console-Set.jpg")
-# article = Article.new(title: "NES", body: "A great console")
-# article.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
-# article.save
+file = URI.open("https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG9tbWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60")
+user00.photo.attach(io: file, filename: "bob.png", content_type: "image/png")
+user00.save
