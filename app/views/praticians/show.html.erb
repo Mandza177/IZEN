@@ -1,0 +1,33 @@
+<div class="container-toy">
+    <div class="card-toy">
+      <div class="text-start">
+        <p><strong><%= @pratician.first_name %></strong></p>
+        <p><strong><%= @pratician.last_name %></strong></p>
+        <p><strong><%= @pratician.job %></strong></p>
+      </div>
+
+      <div class="container">
+        <div class="row row-cols-2">
+          <div class="rents col-3">
+            <%= simple_form_for [@pratician] do |f| %>
+              <div class="start"><%= f.input :start_date, as: :date, html5: true %></div>
+              <div class="end"><%= f.input :end_date, as: :date, html5: true %></div>
+              <%= f.submit "Schedule your rent", class: "schedule" %>
+            <% end %>
+          </div>
+
+          <div class="col">
+            <%# <div class="pic-toy"><%= cl_image_tag @toy.photo.key, height: 400, width: 700, crop: :fill %></div> %>
+          <%# </div> %>
+        </div>
+      </div>
+
+      <div class="description">
+        <p><%= @pratician.phone_number %></p>
+        <p><%= @pratician.email %></p>
+        <p><%= @pratician.address %></p>
+      </div>
+
+
+    </div>
+</div>
