@@ -1,35 +1,14 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
-
-
-puts "creating specialty"
-
-specialty = ["Ostéopathie", "Chiropraxie", "Hypnose", "Naturopathie", "Massage", "Réfléxologie", "Psychothérapie", "Sophrologie", "Méditation", "Nutrition"]
-
-# puts "creating user"
-
-# user0 = User.create!(name: "Pierre", email: "pierregigolo@gmail.com", password: "biloute")
-
-# e_table "users", force: :cascade do |t|
-#   t.string "email", default: "", null: false
-#   t.string "encrypted_password", default: "", null: false
-#   t.string "reset_password_token"
-#   t.datetime "reset_password_sent_at"
-#   t.datetime "remember_created_at"
-#   t.datetime "created_at", null: false
-#   t.datetime "updated_at", null: false
-#   t.string "first_name"
-#   t.string "last_name"
-#   t.string "location"
-#   t.string "profile_custom"
-#   t.index ["email"], name: "index_users_on_email", unique: true
-#   t.index ["reset_ssword_token"], name: "index_users_on_reset_password_token", unique: true
-
-
-# puts "creating user done"
-
+user00 = User.create!(first_name: "Adolphe", last_name: "Thiers", email: "adolphe.thiers@gmail.com", password: "azerty", location: "", profile_custom: "")
+user01 = User.create!(first_name: "Patrice", last_name: "de Mac Mahon", email: "patrice.macmahon@gmail.com", password: "azerty", location: "", profile_custom: "")
+user02 = User.create!(first_name: "Jules", last_name: "Grévy", email: "jules.grévy@gmail.com", password: "azerty", location: "", profile_custom: "")
+user03 = User.create!(first_name: "Sadi", last_name: "Carnot", email: "sadi.carnot@gmail.com", password: "azerty", location: "", profile_custom: "")
+user04 = User.create!(first_name: "Jean", last_name: "Casimir-Perier", email: "jean.casimir-perier@gmail.com", password: "azerty", location: "", profile_custom: "")
+user05 = User.create!(first_name: "Félix", last_name: "Faure", email: "felix.faure@gmail.com", password: "azerty", location: "", profile_custom: "")
+user06 = User.create!(first_name: "Émile", last_name: "Loubet", email: "emile.loubet@gmail.com", password: "azerty", location: "", profile_custom: "")
+user07 = User.create!(first_name: "Armand", last_name: "Fallières", email: "armand.fallieres@gmail.com", password: "azerty", location: "", profile_custom: "")
+user08 = User.create!(first_name: "Raymond", last_name: "Poincaré", email: "raymond.poincaré@gmail.com", password: "azerty", location: "", profile_custom: "")
+user09 = User.create!(first_name: "Paul", last_name: "Deschanel", email: "paul.deschanel@gmail.com", password: "azerty", location: "", profile_custom: "")
+user10 = User.create!(first_name: "Alexandre", last_name: "Millerand", email: "alexandre.millerand@gmail.com", password: "azerty", location: "", profile_custom: "")
+user11 = User.create!(first_name: "Gaston", last_name: "Doumergue", email: "gaston.doumergue@gmail.com", password: "azerty", location: "", profile_custom: "")
+user12 = User.create!(first_name: "Paul", last_name: "Doumer", email: "paul.doumer@gmail.com", password: "azerty", location: "", profile_custom: "")
+user13 = User.create!(first_name: "Albert", last_name: "Lebrun", email:"albert.lebrun@gmail.com", password: "azerty", location: "", profile_custom: "")
