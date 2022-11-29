@@ -1,11 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
-
 puts "creating users"
 
 user00 = User.create!(first_name: "Adolphe", last_name: "Thiers", email: "adolphe.thiers@gmail.com", password: "azerty", location: "", resul_test: 1)
@@ -25,9 +17,6 @@ user13 = User.create!(first_name: "Albert", last_name: "Lebrun", email:"albert.l
 
 puts "created users"
 
-puts "creating specialty"
-
-specialty = ["Ostéopathie", "Chiropraxie", "Hypnose", "Naturopathie", "Massage", "Réfléxologie", "Psychothérapie", "Sophrologie", "Méditation", "Art thérapeute"]
 
 puts "creating pratician"
 
@@ -88,7 +77,7 @@ Ericka Robine= [first_name: "Ericka", last_name: "Robine", job: "Sonothérapie",
 = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
 = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
 = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-Virginie Azeau = [first_name: "Virginie", last_name: "Azeau", job: "Soin énergétique", specialty: "", phone_number: "", email: "", address: ""]
+# Virginie Azeau = [first_name: "Virginie", last_name: "Azeau", job: "Soin énergétique", specialty: "", phone_number: "", email: "", address: ""]
 #  = [first_name: "", last_name: "", job: "", specialty: "", phone_number: "", email: "", address: ""]
 
 puts "creating pratician done"
