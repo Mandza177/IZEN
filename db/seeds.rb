@@ -86,3 +86,11 @@ p25 = Pratician.create!(first_name: "Ericka", last_name: "Robine", job: "Sonoth√
 #  = [first_name: "", last_name: "", job: "", specialty: "", phone_number: "", email: "", address: ""]
 
 puts "creating pratician done"
+
+# active storage seeds images
+# require "open-uri"
+
+# file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/NES-Console-Set.jpg/1200px-NES-Console-Set.jpg")
+# article = Article.new(title: "NES", body: "A great console")
+# article.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
+# article.save
