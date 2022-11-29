@@ -1,15 +1,18 @@
 <div class="container">
   <div>
-    <!-- img ICI : LE LOGO -->
     <h1>Izen</h1>
   </div>
   <div>
-    <%= form_with url: movies_path, method: :get do %>
-    <%=
-      text_field_tag :query, params[:query], class: "form-control", placeholder: "Spécialité, trouble, thérapeuthe"
-      text_field_tag :locations, params[:locations], class: "form-control", placeholder: "Où ?"
-    %>
-    <%= submit_tag "Search", class: "btn btn-primary" %>
+    <%= form_with url: praticians_path, method: :get do %>
+    <%= text_field_tag :query, params[:query], class: "form-control", placeholder: "Spécialité, trouble, thérapeuthe" %>
+    <%= text_field_tag :locations, params[:locations], class: "form-control", placeholder: "Où ?" %>
+
+      <%= submit_tag "Trouvez votre praticien", class: "" %>
   <% end %>
   </div>
+  <ul>
+    <li><%= link_to  %></li> <!-- insérer liens vers thématiques-->
+    <li><%= link_to  %></li>
+    <li><%= link_to  %></li>
+  </ul>
 </div>
