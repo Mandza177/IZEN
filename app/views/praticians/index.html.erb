@@ -1,0 +1,10 @@
+<h1><%= @praticians.count %></h1>
+<%= @praticians.each do |pratician| %>
+  <div>
+    <ul>
+      <h2>
+        <%= link_to "#{pratician.last_name.upcase} #{pratician.first_name.capitalize}", pratician_path(pratician) %>
+      </h2>
+    </div>
+  </div>
+<% end %>
