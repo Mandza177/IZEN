@@ -1,39 +1,13 @@
-  <p>Trouve ton praticien !</p>
-    <select name="cities" id="city-select">
-      <option value="">--Your City--</option>
-      <%# <option value="Toulouse">Toulouse</option>
-      <option value="La Rochelle">La Rochelle</option>
-      <option value="Reims">Reims</option>
-      <option value="Bordeaux">Bordeaux</option>
-      <option value="Paris">Paris</option>
-      <option value="Rennes">Rennes</option> %>
-      <option value="Nantes">Nantes</option>
-    </select>
-    <%= text_field_tag :query,
-      params[:query],
-      class: "form-control",
-      placeholder: "Find a Lego..."
-    %>
-    <%= submit_tag "Search", class: "btn btn-primary" %>
-  <%# <% end %>
-    <% if @praticians.present?
-      @praticians.each do |pratician| %>
+<%= @praticians.each do |pratician| %>
+  <div class="row g-2 align-items-stretch">
+    <%= link_to pratician_path(pratician)do %>
+      <div class="card1 col-6" style="width: 18rem;">
+                <%# <%= cl_image_tag(toy.photo.key, class: "avatar-large") %>
+        <p><strong><%= pratician.first_name %></strong></p>
+        <p><strong><%= pratician.last_name %></strong></p>
+        <p><strong><%= pratician.job %></strong></p>
 
-          <%# <div class="row g-2 align-items-stretch"> %>
-            <h5>
-              <%= link_to pratician_path(pratician), class:"toy-title1" do %>
-                <div class="card1 col-6" style="width: 18rem;">
-                <%= cl_image_tag(toy.photo.key, class: "avatar-large") %>
-        <p><strong><%= @pratician.first_name %></strong></p>
-        <p><strong><%= @pratician.last_name %></strong></p>
-        <p><strong><%= @pratician.job %></strong></p>
-                </div>
-              <%# <% end %>
-            </h5>
-          </div>
-      <% end %>
-      <% else %>
+      </div>
+    <% end %>
   </div>
-    <h3>No Results</h3>
-  <% end %>
-</div>
+<% end %>
