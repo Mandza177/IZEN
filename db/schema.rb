@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_29_142608) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_30_112354) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -45,6 +45,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_29_142608) do
   create_table "favorites", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.bigint "pratician_id"
+    t.index ["pratician_id"], name: "index_favorites_on_pratician_id"
+    t.index ["user_id"], name: "index_favorites_on_user_id"
   end
 
   create_table "praticians", force: :cascade do |t|
@@ -57,6 +61,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_29_142608) do
     t.integer "rank"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "symptom_id"
+    t.index ["symptom_id"], name: "index_praticians_on_symptom_id"
   end
 
   create_table "symptoms", force: :cascade do |t|
@@ -77,10 +83,16 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_29_142608) do
     t.string "last_name"
     t.string "location"
     t.integer "result_test"
+    t.bigint "symptom_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+    t.index ["symptom_id"], name: "index_users_on_symptom_id"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "favorites", "praticians"
+  add_foreign_key "favorites", "users"
+  add_foreign_key "praticians", "symptoms"
+  add_foreign_key "users", "symptoms"
 end
