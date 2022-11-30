@@ -1,7 +1,7 @@
 class PraticiansController < ApplicationController
 
   def index
-
+    @praticians = Pratician.all
   end
 
 
