@@ -10,11 +10,13 @@ class PraticiansController < ApplicationController
         if params[:locations].present?
           @praticians = Pratician.where(location: params[:locations])
         else
-          @praticians = Praticians.all
+          @praticians = Pratician.all
         end
       end
     end
   end
+
+  
 
   def show
     @pratician = Pratician.find(params[:id])
