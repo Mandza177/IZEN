@@ -1,12 +1,10 @@
+<h1><%= @praticians.count %></h1>
 <%= @praticians.each do |pratician| %>
-  <div class="row g-2 align-items-stretch">
-    <%= link_to pratician_path(pratician)do %>
-      <div class="card1 col-6" style="width: 18rem;">
-                <%# <%= cl_image_tag(toy.photo.key, class: "avatar-large") %>
-        <p><strong><%= pratician.first_name %></strong></p>
-        <p><strong><%= pratician.last_name %></strong></p>
-        <p><strong><%= pratician.job %></strong></p>
-      </div>
-    <% end %>
+  <div>
+    <ul>
+      <h2>
+        <%= link_to "#{pratician.last_name.upcase} #{pratician.first_name.capitalize}", pratician_path(pratician) %>
+      </h2>
+    </div>
   </div>
 <% end %>
