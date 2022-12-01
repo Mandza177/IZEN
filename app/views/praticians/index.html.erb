@@ -9,7 +9,7 @@
 <% end %>
 <div>
 <% @praticians.each do |pratician| %>
-  <div class="card-index">
+  <div class="card">
     <%= link_to pratician_path(pratician)do %>
       <% if pratician.photo.attached? %>
       <%= cl_image_tag(pratician.photo.key, class: "avatar-index")%>
