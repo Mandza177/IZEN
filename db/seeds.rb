@@ -162,5 +162,13 @@ favorites09 = Favorite.create!(user: user04, pratician: p9)
 favorites10 = Favorite.create!(user: user05, pratician: p23)
 favorites11 = Favorite.create!(user: user05, pratician: p16)
 
-
 puts "creating favorites done"
+
+puts "creating SYMPTOMS"
+
+["Sommeil", "Peur", "Douleur", "Fatigue", "Poids", "Digestion", "Alimentation", "Stress", "Colère", "Deuil", "Tabac"].each do |symptom|
+  Symptom.create!(description: symptom)
+end
+puts "created SYMPTOMS done"
+
+
