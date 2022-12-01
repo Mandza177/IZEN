@@ -1,10 +1,30 @@
+<div class="body-profile">
+  <div class="profil d-flex justify-content-center">
+    Votre profil
+  </div>
 
-<%= @favorite_praticians.each do |favorite_pratician| %>
-  <div>
-    <ul>
-      <h2>
-        <%= link_to "#{favorite_pratician.last_name.upcase} #{favorite_pratician.first_name.capitalize}", pratician_path(favorite_pratician) %>
-      </h2>
+  <div class="picture_name d-flex justify-content-center">
+    <%= cl_image_tag(current_user.photo.key, class: "avatar-small") %>
+  </div>
+
+  <div class="complete_name d-flex justify-content-center">
+    <h3><strong><%= current_user.first_name %> <%= current_user.last_name %></strong></h3>
+  </div>
+
+  <div class="themes">
+    <div class="text-themes">
+      <p>Selon vos réponses à notre formulaire, votre profil correspond à celui de:</p>
+    </div>
+
+    <div class="text_themes2">
+      <p>Vous êtes quelqu'un de </p>
     </div>
   </div>
-<% end %>
+
+
+  <div class="informations">
+    <p><ins> Vos informations </ins></p>
+  </div>
+
+
+</div>

@@ -1,0 +1,46 @@
+.avatar-small {
+
+  width: 165px;
+  height: 155px;
+  left: 123px;
+  top: 96px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.informations {
+margin-top: 40px;
+
+}
+
+.body-profile {
+
+  background-color: #202020;
+  height: 100vh;
+
+}
+
+.themes {
+  width: 350px;
+  height: 130px;
+  margin-top: 100px;
+  margin-left: 20px;
+  background: #242424;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.complete_name {
+  margin-top: 40px;
+}
+
+.text-themes {
+  text-align: left;
+
+  p {
+    margin: 0px;
+    padding: 0px;
+  }
+}
