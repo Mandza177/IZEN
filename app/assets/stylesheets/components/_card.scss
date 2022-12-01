@@ -1,20 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
-
-// *, *:before, *:after {
-//   box-sizing: border-box;
-// }
-
-body {
-  background: $color-two;
-  font-family: "Varela Round", sans-serif;
-}
-
 .card {
   background: $color-two;
   box-shadow: 0 0 20px rgba(0,0,0,0.4);
   border-radius: 15px;
-  margin: 50px 20px 20px 20px;
+  margin: 20px 20px 20px 20px;
   height: 150px;
   width: 350px;
   padding: 20px;
@@ -31,20 +21,8 @@ body {
 
   a {
     text-decoration: none;
-    color: $color-three;
+    color: $color-logo;
     text-decoration: none;
-    width: 150px;
-  }
-
-  h5 {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-    width: 150px;
-    font-family: $title-job;
-    padding-bottom: 0;
   }
 
   .container-card{
@@ -59,60 +37,38 @@ body {
     font-family: $title-card;
     width: 180px;
   }
-  .container-position{
-  display: flex;
-  color: $color-position;
+
+  h5 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    width: 150px;
+    font-family: $title-job;
+    padding-bottom: 10px;
   }
+
+  .container-position{
+    display: flex;
+    color: $color-position;
+  }
+
   p{
     color: $color-position;
   }
+
   h6{
     color: $color-position;
     font-family: $font-position;
     font-size: 10px;
   }
 
+  .container-heart{
+    display: flex;
+    align-items: center;
+    color: $color-logo;
+    font-size: 25px;
+  }
+
 }
-  // .title {
-  //   font-size: 25px;
-  // }
-  // .icon {
-  //   width:100px;
-  //   margin: 50px 0;
-  //   svg {
-  //     width: 100px;
-  //     height: 100px;
-  //     path {
-  //       fill: $color-four;
-  //     }
-  //   }
-  // }
-  // .features {
-
-  //     width:200px;
-  //     padding: 0;
-  //     margin: 20px 0 50px 0;
-  //     list-style-type: none;
-  //     li {
-  //       margin: 10px 0;
-  //       font-size: 14px;
-  //       span {
-  //         border-bottom: 2px dotted $color-four;
-  //       }
-
-  //   }
-  // }
-  // .btn {
-  //   display: block;
-  //   background: $color-four;
-  //   color: white;
-  //   padding: 15px 20px;
-  //   margin: 20px 0;
-  //   border-radius: 5px;
-  //   box-shadow: rgba(0,0,0,0.9);
-  //   transition: all 200ms ease-in-out;
-  //   text-decoration: none;
-  //   &:hover {
-  //     background: $color-three;
-  //   }
-  // }

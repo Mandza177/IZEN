@@ -1,5 +1,5 @@
 
-<div class="background">
+<div >
 <% @praticians.each do |pratician| %>
   <div class="card">
     <%= link_to pratician_path(pratician)do %>
@@ -8,12 +8,12 @@
       <% end %>
     <div class="container-card">
         <h4><%= pratician.first_name %> <%= pratician.last_name %></h4>
-        <h5>Praticien en <%= pratician.job %></h5>
+        <h5><%= pratician.job %></h5>
         <div class="fa-solid fa-location-dot container-position"><h6>  <%= pratician.address %></h6></div>
     <% end %>
     </div>
     <div class="container-heart">
-      <i class="fa-regular fa-heart position"></i>
+      <i class="fa-regular fa-heart"></i>
     </div>
   </div>
 <% end %>
