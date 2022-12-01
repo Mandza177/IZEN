@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   resources :users, only: [:create, :update]
   resources :praticians, only: [:index, :show]
 
-  resources :profile, only: [:show]
+  resources :pages, only: [:profile]
 end

@@ -1,7 +1,6 @@
 class PraticiansController < ApplicationController
 
   def index
-
     # if params[:query].present? && params[:address].present?
     #   # sql_query = <<~SQL
     #   #   praticians.job @@ :query
