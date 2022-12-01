@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
   has_many :favorites, dependent: :destroy
   has_many :praticians, through: :favorites
-  belongs_to :symptom
+  belongs_to :symptom, optional: true
 
   validates :first_name, presence: true
   validates :last_name, presence: true
