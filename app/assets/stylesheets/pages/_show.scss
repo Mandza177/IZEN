@@ -1,0 +1,29 @@
+.show-container{
+  width : 330px;
+  height : 600px;
+  margin: auto 30px;
+  background-color: #1E1E1E;
+  color : #B2B2B2;
+  font-family: $title-card;
+  text-align: center;
+
+}
+
+.show-photo{
+  margin: 30px auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.show-text h2{
+  margin: 0 auto;
+  font-family: "Bree Serif", serif;
+  letter-spacing: 3px;
+}
+
+.show-text li{
+  list-style-type: none;
+  height : 40px;
+  text-align: left;
+}
