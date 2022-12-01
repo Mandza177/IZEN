@@ -1,0 +1,10 @@
+
+<%= @favorite_praticians.each do |favorite_pratician| %>
+  <div>
+    <ul>
+      <h2>
+        <%= link_to "#{favorite_pratician.last_name.upcase} #{favorite_pratician.first_name.capitalize}", pratician_path(favorite_pratician) %>
+      </h2>
+    </div>
+  </div>
+<% end %>
