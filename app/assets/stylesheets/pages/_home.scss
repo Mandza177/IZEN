@@ -1,0 +1,41 @@
+.container {
+  h1{
+    font-family: $color-logo;
+    color: $color-logo;
+
+  }
+
+  p{
+    font-family: $color-text;
+    color: $color-text;
+    padding: 50px;
+    text-align: start;
+    font-size: 12px;
+  }
+}
+
+.search{
+  display: flex;
+  justify-content: center;
+}
+
+.search-btn {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-ghost {
+  color: #fbfbfb;
+  background-color: #282828;
+  border: 1px solid #000000;
+  padding: 8px 24px;
+  border-radius: 50px;
+  // font-weight: lighter;
+  // opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+}

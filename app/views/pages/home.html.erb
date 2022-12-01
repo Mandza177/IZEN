@@ -1,14 +1,16 @@
 <div class="container">
   <div>
-    <h1>Izen</h1>
+    <h1>IZEN</h1>
   </div>
+  <p>Prenez rendez-vous avec un praticien recommandé en médecines douces</p>
   <div>
     <%= form_with url: praticians_path, method: :get, class: "" do %>
-    <%= text_field_tag :query, params[:query], class: "", placeholder: "Symptôme, trouble, thérapeute" %>
+    <%= text_field_tag :query, params[:query], class: "search", placeholder: "Symptôme, trouble, thérapeute" %>
     <%= text_field_tag :address, params[:address], class: "", placeholder: "Commune..." %>
-    <%= submit_tag "Trouvez votre praticien", class: "" %>
+    <%= submit_tag "Trouvez votre praticien", class: "btn btn-ghost search-btn" %>
     <% end %>
   </div>
+  <
   <ul>
     <li><%= link_to "toto" %></li> <!-- insérer liens vers thématiques-->
     <li><%= link_to "tata" %></li>
