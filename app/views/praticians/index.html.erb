@@ -1,22 +1,28 @@
-
-<div class="background">
+<h1>IZEN</h1>
+<hr class="hr-index">
+<% if user_signed_in? %>
+<% else %>
+<div class= "text-sign-in"><p>Inscrivez-vous pour profiter d’un parcours personnalisé et pouvoir enregistrer vos praticiens favoris. Vous aurez aussi accès à nos recommandations et pouvoir écrire des commentaires.</p></div>
+<div class="connect-btn" >
+<a class="btn btn-ghost" href="#">JE M'INCRIS</a>
+</div>
+<% end %>
+<div>
 <% @praticians.each do |pratician| %>
-<div class="card">
-
-<div class="container">
-  <%# <div class="row g-2 align-items-stretch"> %>
+  <div class="card-index">
     <%= link_to pratician_path(pratician)do %>
-      <%# <div class="card1 col-6" style="width: 18rem;"> %>
-                <%# <%= cl_image_tag(toy.photo.key, class: "avatar-large") %>
-
-        <h4><strong><%= pratician.first_name %> <%= pratician.last_name %></strong></h4>
-        <p>Praticien en <%= pratician.job %></p>
-        <p><i class="fa-solid fa-location-dot"> <%= pratician.address %></i></p>
-
+      <% if pratician.photo.attached? %>
+      <%= cl_image_tag(pratician.photo.key, class: "avatar-index")%>
+      <% end %>
+    <div class="container-card">
+        <h4><%= pratician.first_name %> <%= pratician.last_name %></h4>
+        <h5><%= pratician.job %></h5>
+        <div class="fa-solid fa-location-dot container-position"><h6>  <%= pratician.address %></h6></div>
     <% end %>
-    <i class="fa-regular fa-heart position"></i>
+    </div>
+    <div class="container-heart">
+      <i class="fa-regular fa-heart"></i>
     </div>
   </div>
-  <%# </div> %>
 <% end %>
 </div>

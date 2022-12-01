@@ -1,17 +1,28 @@
-<%# <div class="container-toy">
-    <div class="card">
-      <div class="text-start"> %>
-        <p><strong><%= @pratician.first_name %></strong></p>
-        <p><strong><%= @pratician.last_name %></strong></p>
-        <p><strong><%= @pratician.job %></strong></p>
-        <%# </div> %>
-
-
-      <div class="description">
-        <p><%= @pratician.phone_number %></p>
-        <p><%= @pratician.email %></p>
-        <p><%= @pratician.address %></p>
-      </div>
-       <li class="btn btn-flat"><%= link_to "retour", praticians_path %></li>
-    <%# </div>
-</div> %>
+<div class="show-container">
+  <% if @pratician.photo.attached? %>
+    <%= cl_image_tag(@pratician.photo.key, class: "show-photo")%>
+  <% end %>
+  <div class="show-text">
+    <h2><%= @pratician.first_name %></h2>
+    <h2><%= @pratician.last_name.upcase %></h2>
+    <ul>
+      <li>
+        <i class="fa-regular fa-heart position"></i>
+        <%= @pratician.job %>
+      </li>
+      <li>
+        <i class="fa-regular fa-heart position"></i>
+        <%= @pratician.phone_number %>
+      </li>
+      <li>
+        <i class="fa-regular fa-heart position"></i>
+        <%= @pratician.email %>
+      </li>
+      <li>
+        <i class="fa-regular fa-heart position"></i>
+        <%= @pratician.address %>
+      </li>
+    </ul>
+    <%= link_to "retour", praticians_path %>
+  </div>
+</div>

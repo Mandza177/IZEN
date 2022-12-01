@@ -3,9 +3,9 @@ require "open-uri"
 puts "destroy users and praticians"
 
 Favorite.destroy_all
-Symptom.destroy_all
 User.destroy_all
 Pratician.destroy_all
+Symptom.destroy_all
 
 puts "creating SYMPTOMS"
 
@@ -26,20 +26,20 @@ puts "created SYMPTOMS done"
 
 puts "creating users"
 
-user00 = User.create!(first_name: "Adolphe", last_name: "Thiers", email: "adolphe.thiers@gmail.com", password: "azerty", location: "", result_test: 1, symptom: s0)
-user01 = User.create!(first_name: "Patrice", last_name: "de Mac Mahon", email: "patrice.macmahon@gmail.com", password: "azerty", location: "", result_test: 3)
-user02 = User.create!(first_name: "Jules", last_name: "Grévy", email: "jules.grevy@gmail.com", password: "azerty", location: "", result_test: 1)
-user03 = User.create!(first_name: "Sadi", last_name: "Carnot", email: "sadi.carnot@gmail.com", password: "azerty", location: "", result_test: 3)
+user00 = User.create!(first_name: "Adolphe", last_name: "Thiers", email: "adolphe.thiers@gmail.com", password: "azerty", location: "Nantes", result_test: 1, symptom: s0)
+user01 = User.create!(first_name: "Patrice", last_name: "de Mac Mahon", email: "patrice.macmahon@gmail.com", password: "azerty", location: "Nantes", result_test: 3)
+user02 = User.create!(first_name: "Jules", last_name: "Grévy", email: "jules.grevy@gmail.com", password: "azerty", location: "Nantes", result_test: 1)
+user03 = User.create!(first_name: "Sadi", last_name: "Carnot", email: "sadi.carnot@gmail.com", password: "azerty", location: "Nantes", result_test: 3)
 user04 = User.create!(first_name: "Jean", last_name: "Casimir-Perier", email: "jean.casimir-perier@gmail.com", password: "azerty", location: "", result_test: 2)
-user05 = User.create!(first_name: "Félix", last_name: "Faure", email: "felix.faure@gmail.com", password: "azerty", location: "", result_test: 1)
-user06 = User.create!(first_name: "Émile", last_name: "Loubet", email: "emile.loubet@gmail.com", password: "azerty", location: "", result_test: 2)
-user07 = User.create!(first_name: "Armand", last_name: "Fallières", email: "armand.fallieres@gmail.com", password: "azerty", location: "", result_test: 1)
-user08 = User.create!(first_name: "Raymond", last_name: "Poincaré", email: "raymond.poincare@gmail.com", password: "azerty", location: "", result_test: 2)
-user09 = User.create!(first_name: "Paul", last_name: "Deschanel", email: "paul.deschanel@gmail.com", password: "azerty", location: "", result_test: 3)
-user10 = User.create!(first_name: "Alexandre", last_name: "Millerand", email: "alexandre.millerand@gmail.com", password: "azerty", location: "", result_test: 2)
-user11 = User.create!(first_name: "Gaston", last_name: "Doumergue", email: "gaston.doumergue@gmail.com", password: "azerty", location: "", result_test: 1)
-user12 = User.create!(first_name: "Paul", last_name: "Doumer", email: "paul.doumer@gmail.com", password: "azerty", location: "", result_test: 1)
-user13 = User.create!(first_name: "Albert", last_name: "Lebrun", email:"albert.lebrun@gmail.com", password: "azerty", location: "", result_test: 1)
+user05 = User.create!(first_name: "Félix", last_name: "Faure", email: "felix.faure@gmail.com", password: "azerty", location: "Nantes", result_test: 1)
+user06 = User.create!(first_name: "Émile", last_name: "Loubet", email: "emile.loubet@gmail.com", password: "azerty", location: "Nantes", result_test: 2)
+user07 = User.create!(first_name: "Armand", last_name: "Fallières", email: "armand.fallieres@gmail.com", password: "azerty", location: "Nantes", result_test: 1)
+user08 = User.create!(first_name: "Raymond", last_name: "Poincaré", email: "raymond.poincare@gmail.com", password: "azerty", location: "Nantes", result_test: 2)
+user09 = User.create!(first_name: "Paul", last_name: "Deschanel", email: "paul.deschanel@gmail.com", password: "azerty", location: "Nantes", result_test: 3)
+user10 = User.create!(first_name: "Alexandre", last_name: "Millerand", email: "alexandre.millerand@gmail.com", password: "azerty", location: "Nantes", result_test: 2)
+user11 = User.create!(first_name: "Gaston", last_name: "Doumergue", email: "gaston.doumergue@gmail.com", password: "azerty", location: "Nantes", result_test: 1)
+user12 = User.create!(first_name: "Paul", last_name: "Doumer", email: "paul.doumer@gmail.com", password: "azerty", location: "Nantes", result_test: 1)
+user13 = User.create!(first_name: "Albert", last_name: "Lebrun", email:"albert.lebrun@gmail.com", password: "azerty", location: "Nantes", result_test: 1)
 
 puts "created users"
 
@@ -54,7 +54,7 @@ p4 = Pratician.create!(first_name: "Gilles", last_name: "Chehade", job: "Hypnose
 
 p5 = Pratician.create!(first_name: "Georges", last_name: "ABOU KHALIL", job: "Osthéopathie", phone_number: "02.40.73.40.99", email: "aboukhalil@hotmail.fr", address: "6, rue de la Fauvette 44100 NANTES", symptom: s5)
 p6 = Pratician.create!(first_name: "Aude", last_name: "BASSET", job: "Osthéopathie", phone_number: "06.61.25.23.63", email: "basset.aude@gmail.com", address: "13, rue Jean XXIII 44470 CARQUEFOU", symptom: s6)
-p7 = Pratician.create!(first_name: "Justine ", last_name: "BONFILLON", job: "Osthéopathie", phone_number: "Osthéopathie", email: "justinebasset@gmail.com", address: "30 ter, rue Martin Luther King 44240 LA CHAPELLE SUR ERDRE ", symptom: s7)
+p7 = Pratician.create!(first_name: "Justine ", last_name: "BONFILLON", job: "Osthéopathie", phone_number: "07.85.20.18.54", email: "justinebasset@gmail.com", address: "30 ter, rue Martin Luther King 44240 LA CHAPELLE SUR ERDRE ", symptom: s7)
 p8 = Pratician.create!(first_name: "Daniel", last_name: "CHOPINEAUX", job: "Osthéopathie", phone_number: "07.85.20.18.54", email: "d.chopineaux@gmail.com", address: "2 bis, rue d'Herbauges 44310 SAINT LUMINE DE COUTAIS ", symptom: s8)
 p9 = Pratician.create!(first_name: "François ", last_name: "DE BOISJOLLY", job: "Osthéopathie", phone_number: "02.40.48.72.00", email: "frdeboisjolly@wanadoo.fr", address: "Cabinet d'Ostéopathie Monselet 12, rue de Carcouët", symptom: s9)
 
@@ -170,5 +170,3 @@ puts "creating SYMPTOMS"
   Symptom.create!(description: symptom)
 end
 puts "created SYMPTOMS done"
-
-
