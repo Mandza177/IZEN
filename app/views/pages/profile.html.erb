@@ -1,6 +1,6 @@
 <div class="body-profile">
   <div class="profil d-flex justify-content-center">
-    Votre profil
+    <h1>Votre profil</h1>
   </div>
 
   <div class="picture-name d-flex justify-content-center">
@@ -27,11 +27,18 @@
   </div>
 
   <div class="informations">
-    <h3>Location</h3><%= current_user.location %></h3>
-    <hr>
-    <h3>Email <%= current_user.email %></h3>
-    <hr>
-    <h3>Password <%= current_user.password %></h3>
+  <div class="location-wrapper">
+    <h3>Location</h3>
+    <p><%= current_user.location %></p>
+    <hr class="hr-color">
+    <h3>Email</h3>
+    <p><%= current_user.email %></p>
+    <hr class="hr-color">
+    <h3>Password</h3>
+    <p><%= current_user.password %></p>
+  </div>
+
+
   </div>
 
     <div class="title-favorite">
@@ -39,7 +46,7 @@
     </div>
 
   <% @favorite_praticians.each do |favorite_pratician| %>
-    <div class="card-title">
+    <div class="card">
       <%= favorite_pratician.first_name%>
     </div>
   <% end %>

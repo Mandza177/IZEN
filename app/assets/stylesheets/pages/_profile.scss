@@ -10,14 +10,33 @@
 
 .title-informations {
 margin-top: 20px;
+}
 
+.informations {
+  
+
+  h3 {
+    color: #FEC3A7;
+    font-family: 'Bree Serif', 'Serif';
+  }
+
+  p {
+    color: #B2B2B2;
+  }
 }
 
 .body-profile {
-
   background-color: #202020;
   height: 100vh;
+  h1{
+    margin-top: 50px;
+    color: #FEC3A7;
+    font-family: 'Bree serif', 'Serif';
+  }
+}
 
+.picture_name {
+  margin-top: 150px;
 }
 
 .themes {
@@ -34,13 +53,20 @@ margin-top: 20px;
 
 .complete-name {
   margin-top: 40px;
+  h3 {
+    color: #B2B2B2;
+    font-family: 'Bree Serif', 'serif';
+  }
 }
 
 .text-themes {
   text-align: left;
-
   p {
     margin: 0px;
     padding: 0px;
   }
+}
+
+.hr-color {
+  color: #353535;
 }
