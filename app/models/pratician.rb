@@ -7,5 +7,4 @@ class Pratician < ApplicationRecord
   validates :email, uniqueness: true
 
   has_one_attached :photo
-
 end
