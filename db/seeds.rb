@@ -136,18 +136,13 @@ favorites00 = Favorite.create!(user: user00, pratician: p0)
 favorites01 = Favorite.create!(user: user00, pratician: p20)
 favorites02 = Favorite.create!(user: user01, pratician: p15)
 favorites03 = Favorite.create!(user: user01, pratician: p7)
-favorites04 = Favorite.create!(user: user02, pratician: p8)
+favorites04 = Favorite.create!(user: user02, pratician: p8)=
 favorites05 = Favorite.create!(user: user02, pratician: p12)
-favorites06 = Favorite.create!(user: user03, pratician: p4)
+favorites06 = Favorite.create!(user: user03, pratician: p4) SYMPTOMS = ["Sommeil", "Peur", "Douleur", "Fatigue", "Poids", "Digestion", "Alimentation", "Stress", "Colère", "Deuil", "Tabac"]
 favorites07 = Favorite.create!(user: user03, pratician: p6)
 favorites08 = Favorite.create!(user: user04, pratician: p17)
 favorites09 = Favorite.create!(user: user04, pratician: p9)
-favorites10 = Favorite.create!(user: user05, pratician: p23)
-favorites11 = Favorite.create!(user: user05, pratician: p16)
-
-
-puts "creating favorites done"
-
+favorites10 = Favorite.create!(user: user05, pratician: p23) SYMPTOMS = ["Sommeil", "Peur", "Douleur", "Fatigue", "Poids", "Digestion", "Alimentation", "Stress", "Colère", "Deuil", "Tabac"]
 puts "creating SYMPTOMS"
 
 ["Sommeil", "Peur", "Douleur", "Fatigue", "Poids", "Digestion", "Alimentation", "Stress", "Colère", "Deuil", "Tabac"].each do |symptom|

@@ -5,5 +5,7 @@ class PagesController < ApplicationController
   end
 
   def profile
+    @favorite_praticians = current_user.praticians
   end
+
 end
