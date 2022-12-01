@@ -3,9 +3,9 @@ require "open-uri"
 puts "destroy users and praticians"
 
 Favorite.destroy_all
-Symptom.destroy_all
 User.destroy_all
 Pratician.destroy_all
+Symptom.destroy_all
 
 puts "creating SYMPTOMS"
 
@@ -54,7 +54,7 @@ p4 = Pratician.create!(first_name: "Gilles", last_name: "Chehade", job: "Hypnose
 
 p5 = Pratician.create!(first_name: "Georges", last_name: "ABOU KHALIL", job: "Osthéopathie", phone_number: "02.40.73.40.99", email: "aboukhalil@hotmail.fr", address: "6, rue de la Fauvette 44100 NANTES", symptom: s5)
 p6 = Pratician.create!(first_name: "Aude", last_name: "BASSET", job: "Osthéopathie", phone_number: "06.61.25.23.63", email: "basset.aude@gmail.com", address: "13, rue Jean XXIII 44470 CARQUEFOU", symptom: s6)
-p7 = Pratician.create!(first_name: "Justine ", last_name: "BONFILLON", job: "Osthéopathie", phone_number: "Osthéopathie", email: "justinebasset@gmail.com", address: "30 ter, rue Martin Luther King 44240 LA CHAPELLE SUR ERDRE ", symptom: s7)
+p7 = Pratician.create!(first_name: "Justine ", last_name: "BONFILLON", job: "Osthéopathie", phone_number: "07.85.20.18.54", email: "justinebasset@gmail.com", address: "30 ter, rue Martin Luther King 44240 LA CHAPELLE SUR ERDRE ", symptom: s7)
 p8 = Pratician.create!(first_name: "Daniel", last_name: "CHOPINEAUX", job: "Osthéopathie", phone_number: "07.85.20.18.54", email: "d.chopineaux@gmail.com", address: "2 bis, rue d'Herbauges 44310 SAINT LUMINE DE COUTAIS ", symptom: s8)
 p9 = Pratician.create!(first_name: "François ", last_name: "DE BOISJOLLY", job: "Osthéopathie", phone_number: "02.40.48.72.00", email: "frdeboisjolly@wanadoo.fr", address: "Cabinet d'Ostéopathie Monselet 12, rue de Carcouët", symptom: s9)
 
@@ -170,5 +170,3 @@ puts "creating SYMPTOMS"
   Symptom.create!(description: symptom)
 end
 puts "created SYMPTOMS done"
-
-
