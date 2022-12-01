@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
-.card {
+.card-index {
   background: $color-two;
   box-shadow: 0 0 20px rgba(0,0,0,0.4);
   border-radius: 15px;
@@ -51,16 +51,16 @@
 
   .container-position{
     display: flex;
-    color: $color-position;
+    color: $color-text;
   }
 
   p{
-    color: $color-position;
+    color: $color-text;
   }
 
   h6{
-    color: $color-position;
-    font-family: $font-position;
+    color: $color-text;
+    font-family: $font-text;
     font-size: 10px;
   }
 

@@ -1,7 +1,15 @@
-
-<div >
+<h1>IZEN</h1>
+<hr class="hr-index">
+<% if user_signed_in? %>
+<% else %>
+<div class= "text-sign-in"><p>Inscrivez-vous pour profiter d’un parcours personnalisé et pouvoir enregistrer vos praticiens favoris. Vous aurez aussi accès à nos recommandations et pouvoir écrire des commentaires.</p></div>
+<div class="connect-btn" >
+<a class="btn btn-ghost" href="#">JE M'INCRIS</a>
+</div>
+<% end %>
+<div>
 <% @praticians.each do |pratician| %>
-  <div class="card">
+  <div class="card-index">
     <%= link_to pratician_path(pratician)do %>
       <% if pratician.photo.attached? %>
       <%= cl_image_tag(pratician.photo.key, class: "avatar-index")%>

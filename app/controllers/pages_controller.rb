@@ -7,5 +7,4 @@ class PagesController < ApplicationController
   def profile
     @favorite_praticians = current_user.praticians
   end
-
 end
