@@ -10,6 +10,18 @@ body {
   font-family: "Varela Round", sans-serif;
 }
 
+a {
+  color: $color-three;
+  text-decoration: none;
+  width: 150px;
+}
+p {
+text-decoration: none;
+color: white;
+font-size: 10px;
+}
+
+
 .card {
   background: $color-two;
   box-shadow: 0 0 20px rgba(0,0,0,0.4);

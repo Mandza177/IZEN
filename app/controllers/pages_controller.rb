@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  # skip_before_action :authenticate_user!, only: [ :home ]
+  # skip_before_action :authenticate_user!, only: [ :home, :index, :show ]
 
   def home
   end
@@ -7,5 +7,4 @@ class PagesController < ApplicationController
   def profile
     @favorite_praticians = current_user.praticians
   end
-
 end
