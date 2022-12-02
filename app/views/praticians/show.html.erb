@@ -6,25 +6,30 @@
     <h2><%= @pratician.first_name %></h2>
     <h2><%= @pratician.last_name.upcase %></h2>
     <ul>
-      <li class="show-inline">
+      <li>
         <i class="fa-regular fa-heart position"></i>
-        <div class="show-job-tag">
-          <%= @pratician.job %>
+        <div class="show-tag-job">
+          <p><%= @pratician.job %></p>
         </div>
       </li>
       <li>
         <i class="fa-solid fa-phone-volume"></i>
-        <%= @pratician.phone_number %>
+        <div class="show-tag">
+          <%= @pratician.phone_number %>
+        </div>
       </li>
       <li>
         <i class="fa-solid fa-envelope"></i>
-        <%= @pratician.email %>
+        <div class="show-tag">
+          <%= @pratician.email %>
+        </div>
       </li>
       <li>
         <i class="fa-solid fa-location-dot"></i>
-        <%= @pratician.address %>
+        <div class="show-tag">
+          <%= @pratician.address %>
+        </div>
       </li>
     </ul>
-    <%= link_to "retour", praticians_path %>
   </div>
 </div>

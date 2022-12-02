@@ -18,23 +18,42 @@
 .show-text h2{
   margin: 0 auto;
   font-family: "Bree Serif", serif;
-  letter-spacing: 3px;
+  font-size: 32px;
+  letter-spacing: 2px;
 }
 
 .show-text ul{
-  padding-left:0;
+  padding: 30px;
 }
 
 .show-text li{
-  //border:1px solid rgb(55, 146, 179);
-  border:1px solid red;
-
   list-style-type: none;
-  //height : 40px;
   text-align: left;
+  padding:20px 0;
 }
 
 .show-text i{
   font-size: 20px;
   margin:0;
+  width:10%;
+  color:$color-logo;
 }
+
+.show-tag{
+  text-align:right;
+  width:90%;
+  float:right;
+  font-family: "Bree Serif", serif;
+  font-size: 15px;
+}
+
+.show-tag-job{
+  border:1px solid white;
+  text-align:center;
+  width:90%;
+  float:right;
+  font-family: "Bree Serif", serif;
+  font-size: 15px;
+}
+
+//#353535 texte de "Hypnose"
