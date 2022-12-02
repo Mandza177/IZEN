@@ -2,37 +2,3 @@
 @import "index_pages";
 @import "profile";
 @import "show";
-
-.btn-ghost {
-  color: #fbfbfb;
-  background-color: #282828;
-  border: 1px solid #000000;
-  padding: 8px 24px;
-  border-radius: 50px;
-  // font-weight: lighter;
-  // opacity: 0.6;
-  transition: opacity 0.3s ease;
-}
-
-.btn-ghost:hover {
-  opacity: 1;
-}
-
-.connect-btn {
-  display: flex;
-  justify-content: center;
-  
-}
-.hr-index{
-  color: $color-logo;
-  // width: 250px;
-  // align-items: center;
-}
-.text-sign-in{
-  text-align: start;
-  padding-left: 40px;
-  padding-right: 20px;
-  color: $color-text;
-  font-size: 15px;
-  font-family: $font-text;
-}
