@@ -21,8 +21,20 @@
   letter-spacing: 3px;
 }
 
+.show-text ul{
+  padding-left:0;
+}
+
 .show-text li{
+  //border:1px solid rgb(55, 146, 179);
+  border:1px solid red;
+
   list-style-type: none;
-  height : 40px;
+  //height : 40px;
   text-align: left;
+}
+
+.show-text i{
+  font-size: 20px;
+  margin:0;
 }
