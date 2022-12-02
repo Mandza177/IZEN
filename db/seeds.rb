@@ -76,35 +76,6 @@ p23 = Pratician.create!(first_name: "Bénédicte", last_name: "GIE", job: "Sonot
 p24 = Pratician.create!(first_name: "Guyochet", last_name: "Guylène Guais", job: "Sonothérapie", phone_number: "07.68.29.79.74", email: "http://guyleneguaisguyochet.com/", address: "18 rue Vienne 44000 Nantes", symptom: s0)
 p25 = Pratician.create!(first_name: "Ericka", last_name: "Robine", job: "Sonothérapie", phone_number: "06.43.05.57.68", email: "sonotherapeute.wixsite.com", address: "62 Bd Jean Ingres 44300 St Herblain", symptom: s1)
 
-# = (first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# = [first_name: "", last_name: "", job: "", phone_number: "", email: "", address: ""]
-# Virginie Azeau = [first_name: "Virginie", last_name: "Azeau", job: "Soin énergétique", specialty: "", phone_number: "", email: "", address: ""]
-#  = [first_name: "", last_name: "", job: "", specialty: "", phone_number: "", email: "", address: ""]
 
 puts "creating pratician done"
 
