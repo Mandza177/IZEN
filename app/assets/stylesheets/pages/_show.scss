@@ -32,11 +32,10 @@
   padding:20px 0;
 }
 
-.show-text i{
+.show-text img{
   font-size: 20px;
   margin:0;
   width:10%;
-  color:$color-logo;
 }
 
 .show-tag{
@@ -48,12 +47,12 @@
 }
 
 .show-tag-job{
-  border:1px solid white;
   text-align:center;
-  width:90%;
-  float:right;
-  font-family: "Bree Serif", serif;
-  font-size: 15px;
+  width:170px;
+  height:32px;
+  margin:0 auto;
+  border-radius: 8px;
+  background-color: $color-logo;
+  font-size: 20px;
+  color:#353535;
 }
-
-//#353535 texte de "Hypnose"

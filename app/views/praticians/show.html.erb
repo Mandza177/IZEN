@@ -7,25 +7,27 @@
     <h2><%= @pratician.last_name.upcase %></h2>
     <ul>
       <li>
-        <i class="fa-regular fa-heart position"></i>
-        <div class="show-tag-job">
-          <p><%= @pratician.job %></p>
+        <%= image_tag "svg/heart_favorites.svg" %>
+        <div class="show-tag">
+          <p class="show-tag-job">
+            <%= @pratician.job %>
+          </p>
         </div>
       </li>
       <li>
-        <i class="fa-solid fa-phone-volume"></i>
+        <%= image_tag "svg/phone.svg" %>
         <div class="show-tag">
           <%= @pratician.phone_number %>
         </div>
       </li>
       <li>
-        <i class="fa-solid fa-envelope"></i>
+        <%= image_tag "svg/email.svg" %>
         <div class="show-tag">
           <%= @pratician.email %>
         </div>
       </li>
       <li>
-        <i class="fa-solid fa-location-dot"></i>
+        <%= image_tag "svg/location_show.svg" %>
         <div class="show-tag">
           <%= @pratician.address %>
         </div>
