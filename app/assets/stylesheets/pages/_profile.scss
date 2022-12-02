@@ -26,7 +26,8 @@ color: #B2B2B2;
 
 .profil {
   h3{
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px ;
     color: #FEC3A7;
     font-family: 'Bree serif', 'Serif';
   }
@@ -35,7 +36,8 @@ color: #B2B2B2;
 .body-profile {
   background-color: #202020;
   height: 100vh;
-  margin-right: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .picture_name {
@@ -45,8 +47,8 @@ color: #B2B2B2;
 .themes {
   width: 350px;
   height: 130px;
-  margin-top: 50px;
-  margin-left: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
   background: #242424;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -57,7 +59,7 @@ color: #B2B2B2;
 .complete-name {
   margin-top: 40px;
   h3 {
-    color: #D9D9D9;
+    color: #B2B2B2;
     font-family: 'Bree Serif', 'serif';
   }
 }
@@ -65,16 +67,41 @@ color: #B2B2B2;
 .text-themes {
   text-align: left;
   p {
-    margin: 0px;
-    padding: 0px;
+    margin: 10px;
+    padding: 5px;
+    color: #B2B2B2;
   }
 }
 
+.text-themes2 {
+  text-align: center;
+  color: #B2B2B2;
+}
+
 .hr-color {
-  color: #353535;
-  height: 10px;
+  border-bottom: 1px solid #FEC3A7;
+  display: block;
+  margin-bottom: 10px;
+  width: 350px;
+  margin-left: 20px;
 }
 
 .title-favorite {
   color: #B2B2B2;
+}
+
+.location-wrapper {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  p {
+    margin: 0px;
+    margin-top: 5px;
+  }
+
+  h3 {
+    margin: 0px;
+  }
 }

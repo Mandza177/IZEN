@@ -21,30 +21,37 @@
     </div>
   </div>
 
+  <div class="profile-info">
+    <div class="title-informations">
+      <p><ins> Vos informations: </ins></p>
+    </div>
 
-  <div class="title-informations">
-    <p><ins> Vos informations </ins></p>
-  </div>
-
-  <div class="informations">
-  <div class="location-wrapper">
-    <h3>Location</h3>
-    <p><%= current_user.location %></p>
-    <hr class="hr-color">
-    <h3>Email</h3>
-    <p><%= current_user.email %></p>
-  </div>
-
-
-  </div>
+    <div class="informations w-100">
+      <div class="location-wrapper">
+        <h3>Location</h3>
+        <p><%= current_user.location %></p>
+      </div>
+          <div class="hr-color"></div>
+        <div class="location-wrapper">
+          <h3>Email</h3>
+          <p><%= current_user.email %></p>
+        </div>
+    </div>
 
     <div class="title-favorite">
       <p><ins> Vos favoris:</ins></p>
     </div>
+  </div>
 
-  <% @favorite_praticians.each do |favorite_pratician| %>
-    <div class="card">
-      <%= favorite_pratician.first_name%>
-    </div>
-  <% end %>
+
+    <% @favorite_praticians.each do |favorite_pratician| %>
+      <div class="card">
+        <%# <%= cl_image_tag(favorite_pratician.photo.key, class: "avatar-index")%>
+          <div class="container-card">
+            <h4><%= favorite_pratician.first_name %> <%= favorite_pratician.last_name %></h4>
+            <h5><%= favorite_pratician.job %></h5>
+            <div class="fa-solid fa-location-dot container-position"><h6>  <%= favorite_pratician.address %></h6></div>
+          </div>
+      </div>
+    <% end %>
 </div>
