@@ -6,23 +6,33 @@
   }
 
   p{
+    margin-inline: 1rem ;
     font-family: $color-text;
     color: $color-text;
     padding: 50px;
-    text-align: start;
-    font-size: 12px;
+    text-align: center;
+    font-size: 13px;
   }
+}
+.search-bar{
+  // display: flex;
+  // background-color: transparent;
+
 }
 
 .search{
-  display: flex;
-  justify-content: center;
+  border: 3px;
+  border-inline-end-color: $color-logo;
+  background-color: transparent;
+  // color: $color-text;
+  margin-top: 10px;
+
 }
 
 .search-btn {
-  padding: 50px;
-  display: flex;
-  justify-content: center;
+  margin-top: 25px;
+  // display: flex;
+  // justify-content: center;
 }
 
 .btn-ghost {
@@ -38,4 +48,26 @@
 
 .btn-ghost:hover {
   opacity: 1;
+}
+
+.search-form{
+  // background-color: transparent;
+  margin-inline: 4rem;
+
+  input {
+    width: 100%;
+  }
+}
+
+.cercle{
+  background-color: $color-logo;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.thematique{
+margin: 30px;
+
 }
