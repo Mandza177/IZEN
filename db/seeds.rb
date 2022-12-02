@@ -145,8 +145,6 @@ p19.photo.attach(io: file, filename: "bob.png", content_type: "image/png")
 puts "created photos for praticians"
 
 
-
-
 puts "creating favorites"
 
 favorites00 = Favorite.create!(user: user00, pratician: p0)
