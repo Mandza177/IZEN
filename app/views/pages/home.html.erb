@@ -5,24 +5,27 @@
   <p>Prenez rendez-vous avec un praticien recommandé en médecines douces</p>
   <div class= "search-bar">
     <%= form_with url: praticians_path, method: :get, class: "search-form" do %>
-      <%= text_field_tag :query, params[:query], class: "search", placeholder: "Symptôme, trouble, thérapeute" %>
-      <%= text_field_tag :address, params[:address], class: "search", placeholder: "Commune..." %>
+      <%= text_field_tag :query, params[:query], class: "search", placeholder: "Symptôme, thérapie, praticien" %>
+      <%= text_field_tag :address, params[:address], class: "search", placeholder: "Commune, code postal" %>
       <%= submit_tag "Trouvez votre praticien", class: "btn-ghost search-btn" %>
     <% end %>
   </div>
   <h2 >Thématiques</h2>
   <div class=container-cercles>
-    <%# <%= link_to pratician_path do %>
-      <div class="cercle"><i class="fa-solid fa-user logo-home"></i>
+    <%= link_to "/" do %>
+      <div class="cercle">
+        <%= image_tag "svg/eye_homepage.svg" %>
       </div>
-    <%# <% end %>
-    <%# <%= link_to pratician_path do %>
-      <div class="cercle"><i class="fa-solid fa-user logo-home"></i>
+    <% end %>
+    <%= link_to do %>
+      <div class="cercle">
+        <%= image_tag "svg/sound_homepage.svg" %>
       </div>
-    <%# <% end %>
-    <%# <%= link_to pratician_path do %>
-      <div class="cercle"><i class="fa-solid fa-user logo-home"></i>
+    <% end %>
+    <%= link_to do %>
+      <div class="cercle">
+        <%= image_tag "svg/hand_homepage.svg" %>
       </div>
-    <%# <% end %>
+    <% end %>
   </div>
 </div>
