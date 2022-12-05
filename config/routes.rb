@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "pages#home"
 
-  get "/profile",       to: "pages#profile"
+  
   get "/hypnose",       to: "pages#hypnose"
   get "/naturopathie",  to: "pages#naturopathie"
   get "/ostheopathie",   to: "pages#ostheopathie"

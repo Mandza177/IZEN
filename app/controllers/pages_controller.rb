@@ -28,8 +28,4 @@ class PagesController < ApplicationController
 
   def sonotherapie
   end
-
-  def profile
-    @favorite_praticians = current_user.praticians
-  end
 end
