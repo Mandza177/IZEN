@@ -10,7 +10,4 @@ class PagesController < ApplicationController
   def hypnose
   end
 
-  def profile
-    @favorite_praticians = current_user.praticians
-  end
 end
