@@ -15,7 +15,7 @@
       <%= cl_image_tag(pratician.photo.key, class: "avatar-index")%>
       <% end %>
     <div class="container-card">
-        <h4><%= pratician.first_name %> <%= pratician.last_name %></h4>
+        <h4><%= pratician.first_name %> <%= pratician.last_name.upcase %></h4>
         <h5><%= pratician.job %></h5>
         <div class="fa-solid fa-location-dot container-position"><h6>  <%= pratician.address %></h6></div>
     <% end %>

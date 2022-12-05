@@ -1,0 +1,29 @@
+.metiers{
+  background: $color-two;
+  box-shadow: 15px 15px 20px rgba(0,0,0,0.4);
+  border-radius: 15px;
+  margin: 35px;
+  // width: 350px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  font-family: $title-card;
+  color: $color-text;
+  font-family: $title-job;
+  font-size: 30px;
+
+
+
+  .container{
+  margin: 30px;
+  }
+}
+
+h2{
+  color: white;
+  font-family: $title-job;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

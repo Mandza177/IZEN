@@ -44,14 +44,22 @@
   </div>
 
 
-    <% @favorite_praticians.each do |favorite_pratician| %>
+  <% @favorite_praticians.each do |favorite_pratician| %>
       <div class="card">
+     <%= link_to pratician_path(favorite_pratician)do %>
+      <% if favorite_pratician.photo.attached? %>
+      <%= cl_image_tag(favorite_pratician.photo.key, class: "avatar-index")%>
+      <% end %>
         <%# <%= cl_image_tag(favorite_pratician.photo.key, class: "avatar-index")%>
           <div class="container-card">
             <h4><%= favorite_pratician.first_name %> <%= favorite_pratician.last_name %></h4>
             <h5><%= favorite_pratician.job %></h5>
             <div class="fa-solid fa-location-dot container-position"><h6>  <%= favorite_pratician.address %></h6></div>
+          <% end %>
           </div>
+        <div class="container-heart">
+      <i class="fa-regular fa-heart"></i>
+    </div>
       </div>
-    <% end %>
+  <% end %>
 </div>
