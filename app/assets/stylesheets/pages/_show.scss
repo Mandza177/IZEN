@@ -1,11 +1,12 @@
 .show-container{
   width : 330px;
-  height : 600px;
-  margin: auto 30px;
-  color : #B2B2B2;
+  min-height : 600px;
+  margin: 0 auto;
+  background-color :$color-two;
   font-family: $title-card;
   text-align: center;
-  border:1px solid #303030;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.8);
 }
 
 .show-photo{
@@ -23,7 +24,7 @@
 }
 
 .show-text ul{
-  padding: 30px;
+  padding: 0 30px;
 }
 
 .show-text li{
@@ -39,9 +40,9 @@
 }
 
 .show-tag{
-  text-align:right;
-  width:90%;
+  text-align:left;
   float:right;
+  width : 80%;
   font-family: "Bree Serif", serif;
   font-size: 15px;
 }
@@ -54,5 +55,17 @@
   border-radius: 8px;
   background-color: $color-logo;
   font-size: 20px;
+}
+
+.show-tag-job a{
+  display:block;
+  text-decoration:none;
   color:#353535;
+}
+
+.pratician_description{
+  font-size: 14px;
+  color:white;
+  padding: 10px 30px;
+  font-style: italic;
 }

@@ -3,15 +3,20 @@
     <%= cl_image_tag(@pratician.photo.key, class: "show-photo")%>
   <% end %>
   <div class="show-text">
-    <h2><%= @pratician.first_name %></h2>
-    <h2><%= @pratician.last_name.upcase %></h2>
+    <h2>
+      <%= @pratician.first_name %>
+      <%= @pratician.last_name.upcase %>
+    </h2>
+    <p class="pratician_description">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    </p>
     <ul>
       <li>
         <%= image_tag "svg/heart_favorites.svg" %>
         <div class="show-tag">
-          <p class="show-tag-job">
-            <%= @pratician.job %>
-          </p>
+          <div class="show-tag-job">
+            <%= link_to @pratician.job%>
+          </div>
         </div>
       </li>
       <li>
