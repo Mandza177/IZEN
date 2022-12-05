@@ -1,9 +1,8 @@
-.metiers{
+.practices{
   background: $color-two;
   box-shadow: 15px 15px 20px rgba(0,0,0,0.4);
   border-radius: 15px;
   margin: 35px;
-  // width: 350px;
   padding: 15px;
   display: flex;
   justify-content: center;
@@ -11,12 +10,6 @@
   color: $color-text;
   font-family: $title-job;
   font-size: 30px;
-
-
-
-  .container{
-  margin: 30px;
-  }
 }
 
 h2{
