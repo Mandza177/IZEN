@@ -17,6 +17,18 @@ class PagesController < ApplicationController
     @praticians = Pratician.where("praticians.job @@ :job", job: params[:job])
   end
 
+  def ostheopathie
+  end
+
+  def naturopathie
+  end
+
+  def chiropratique
+  end
+
+  def sonotherapie
+  end
+
   def profile
     @favorite_praticians = current_user.praticians
   end

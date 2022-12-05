@@ -1,12 +1,14 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <% if user_signed_in? %>
-      <%= link_to "/", class: "navbar-brand1" do %>
-        <%= image_tag "svg/menu.svg" %>
-      <% end %>
-      
-      <div class="log-wrap">
-        <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "log-out" %>
+
+    <%# <i class="fa-solid fa-user color-navbar"></i> %>
+    <%= link_to "/" do %>
+      <%= image_tag "svg/menu.svg" %>
+    <% end %>
+      <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "log-out" %>
+    <%= link_to profile_path(current_user) do %>
+      <%= image_tag "svg/profile.svg" %>
+    <% end %>
 
         <%= link_to profile_path, class: "navbar-brand2" do %>
           <%= image_tag "svg/profile.svg" %>
