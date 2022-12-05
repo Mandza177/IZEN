@@ -8,14 +8,20 @@
       <%= @pratician.last_name.upcase %>
     </h2>
     <p class="pratician_description">
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "<%= @pratician.description %>"
     </p>
     <ul>
       <li>
         <%= image_tag "svg/heart_favorites.svg" %>
         <div class="show-tag">
           <div class="show-tag-job">
-            <%= link_to @pratician.job%>
+            <% if @pratician.job == "Osthéopathie" %>
+              <%= link_to "Osthéopathie", "/ostheopathie" %>
+              <% elsif @pratician.job == "Sonothérapie" %>
+                <%= link_to "Sonothérapie", "/sonotherapie" %>
+              <% else %>
+                <%= link_to @pratician.job, "/#{@pratician.job.downcase}" %>
+              <% end %>
           </div>
         </div>
       </li>
