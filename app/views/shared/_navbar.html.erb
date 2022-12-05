@@ -1,24 +1,18 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid">
-
-    <%# <i class="fa-solid fa-user color-navbar"></i> %>
-    <%= link_to "/" do %>
-      <%= image_tag "svg/menu.svg" %>
-    <% end %>
-      <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "log-out" %>
-    <%= link_to profile_path(current_user) do %>
-      <%= image_tag "svg/profile.svg" %>
-    <% end %>
-
-        <%= link_to profile_path, class: "navbar-brand2" do %>
-          <%= image_tag "svg/profile.svg" %>
-        <% end %>
+  <div class="navbar navbar-expand-sm navbar-light ">
+    <div class="container-fluid">
+      <i id="back_home" class="fa-solid fa-house"></i>
+      <div class="log-area">
+        <% if user_signed_in? %>
+          <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "log-out" %>
+          <%= link_to profile_path do %>
+            <%= image_tag "svg/profile.svg" %>
+          <% end %>
+          <% else %>
+            <%= link_to new_user_session_path do %>
+            <%= image_tag "svg/profile.svg" %>
+            <% end %>
+          <% end %>
       </div>
-
-    <% else %>
-      <li class="nav-item">
-        <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-      </li>
-    <% end %>
+    </div>
   </div>
 </div>

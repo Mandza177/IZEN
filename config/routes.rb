@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   get "/thematique",  to: "pages#thematique"
 >>>>>>> master
 
-  resources :users, only: [:create, :update]
+  resources :users, only: [:create, :update, :destroy]
   resources :praticians, only: [:index, :show]
   resources :profiles, only: [:show, :edit, :update]
 end
