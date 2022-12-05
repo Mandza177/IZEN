@@ -10,4 +10,19 @@ class PagesController < ApplicationController
   def hypnose
   end
 
+  def ostheopathie
+  end
+
+  def naturopathie
+  end
+
+  def chiropratique
+  end
+
+  def sonotherapie
+  end
+
+  def profile
+    @favorite_praticians = current_user.praticians
+  end
 end
