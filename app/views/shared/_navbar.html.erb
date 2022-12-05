@@ -1,12 +1,12 @@
 <% if user_signed_in? %>
 <div class="navbar navbar-expand-sm navbar-light ">
   <div class="container-fluid">
-   <%# <i class="fa-solid fa-user color-navbar"></i> %>
-   <%= link_to "/" do %>
+    <%# <i class="fa-solid fa-user color-navbar"></i> %>
+    <%= link_to "/" do %>
       <%= image_tag "svg/menu.svg" %>
     <% end %>
       <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "log-out" %>
-    <%= link_to profile_path do %>
+    <%= link_to profile_path(current_user) do %>
       <%= image_tag "svg/profile.svg" %>
     <% end %>
 
@@ -18,9 +18,7 @@
   <%# <button class="navbar-toggler color-navbar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" href="home">
       <span class="navbar-toggler-icon "></span>
   </button> %>
-
-
-
+      <%# <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
 
   </div>
 </div>

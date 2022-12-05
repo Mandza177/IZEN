@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: "pages#home"
+
   get "/profile",       to: "pages#profile"
+
 
   get "/hypnose",       to: "pages#hypnose"
   get "/naturopathie",  to: "pages#naturopathie"
@@ -13,4 +15,5 @@ Rails.application.routes.draw do
 
   resources :users, only: [:create, :update]
   resources :praticians, only: [:index, :show]
+  resources :profiles, only: [:show, :edit, :update]
 end
