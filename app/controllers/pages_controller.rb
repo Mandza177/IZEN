@@ -4,10 +4,17 @@ class PagesController < ApplicationController
   def home
   end
 
-  def thematiques
+  def thematique1
+  end
+
+  def thematique2
+  end
+
+  def thematique3
   end
 
   def hypnose
+    @praticians = Pratician.where("praticians.job @@ :job", job: params[:job])
   end
 
   def profile

@@ -46,7 +46,7 @@
 
   <% @favorite_praticians.each do |favorite_pratician| %>
       <div class="card">
-     <%= link_to pratician_path(favorite_pratician)do %>
+    <%= link_to pratician_path(favorite_pratician)do %>
       <% if favorite_pratician.photo.attached? %>
       <%= cl_image_tag(favorite_pratician.photo.key, class: "avatar-index")%>
       <% end %>
