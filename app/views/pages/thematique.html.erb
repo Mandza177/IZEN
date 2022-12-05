@@ -1,0 +1,66 @@
+
+<% if %>
+  <div class=container-cercles>
+    <div class="cercle">
+      <%= image_tag "svg/eye_homepage.svg" %>
+    </div>
+  </div>
+  <h2>Thématiques Visuelle</h2>
+  <div class="container">
+  <%= link_to "" %>
+  <div class="metiers">
+    Hypnose
+  </div>
+  <%= link_to "" %>
+  <div class="metiers">
+    Art Thérapie
+  </div>
+  <%= link_to "" %>
+  <div class="metiers">
+    Sonothérapie
+  </div>
+
+<% elsif %>
+  <div class=container-cercles>
+    <div class="cercle">
+      <%= image_tag "svg/sound_homepage.svg" %>
+    </div>
+  </div>
+  <h2>Thématiques Auditive</h2>
+  <div class="container">
+  <%= link_to "" %>
+  <div class="metiers">
+    Hypnose
+  </div>
+  <%= link_to "" %>
+  <div class="metiers">
+    Sonothérapie
+  </div>
+
+<% else %>
+  <div class=container-cercles>
+    <div class="cercle">
+      <%= image_tag "svg/hand_homepage.svg" %>
+    </div>
+  </div>
+  <h2>Thématiques Corporelle</h2>
+  <div class="container">
+  <%= link_to "" %>
+  <div class="metiers">
+    Ostéopathie
+  </div>
+  <%= link_to "" %>
+  <div class="metiers">
+    Chiropraxie
+  </div>
+  <%= link_to "" %>
+  <div class="metiers">
+    Etio Médecine
+  </div>
+  <div class="metiers">
+    Shiatsu
+  </div>
+  <div class="metiers">
+    Massage Thaïlandais
+  </div>
+<% end %>

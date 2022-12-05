@@ -15,8 +15,7 @@
     margin-top: 50px;
     margin-bottom: 35px;
     font-size: 25px;
-    text-decoration:underline;
-    font-family: $title-card;
+    font-family: $font-text;
     display: flex;
     justify-content: center;
     letter-spacing: 2px;
@@ -38,6 +37,8 @@
   // border: 3px;
   border-bottom-color: $color-logo;
   border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
   background-color: transparent;
   // color: $color-text;
   margin-top: 15px;
@@ -50,9 +51,9 @@
 }
 
 .btn-ghost {
-  color: #fbfbfb;
-  background-color: #282828;
-  border: 1px solid #000000;
+  color: red;
+  background-color: $color-logo;
+  border: 2px solid #000000;
   padding: 8px 24px;
   border-radius: 50px;
   // font-weight: lighter;
