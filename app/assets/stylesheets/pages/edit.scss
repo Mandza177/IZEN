@@ -1,0 +1,61 @@
+.survey-container{
+
+  font-size: 17px;
+
+  font-family: 'Bree Serif', 'Serif';
+}
+
+
+
+.form-title {
+
+  H2 {
+    color: #FEC3A7;
+    font-family: 'Bree Serif', 'Serif';
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: $color-job;
+  }
+}
+
+.survey {
+  display: flex;
+}
+
+// .answers {
+//   display: flex;
+//   justify-content: center;
+//   color:  $color-job;
+// }
+
+// .choiceone {
+//   border: 1px solid #FEC3A7;
+// }
+
+.questions {
+  color: white;
+}
+
+.form-check-input{
+  background-color: white;
+}
+
+.form-check-input:checked{
+  background-color:#b3208e;
+  border-color: #FEC3A7;
+}
+
+.col-form-label {
+  color: #FEC3A7;
+}
+
+.btn{
+  margin-left: 110px;
+  color: black;
+}

@@ -1,53 +1,38 @@
 <div class="survey-container">
 
-<h2><ins> Formulaire d'inscription </ins></h2>
+  <div class="form-title">
+    <h2><ins> Formulaire d'inscription </ins></h2>
+
+    <p> Une seule réponse par question </p>
   </div>
 
-      <p> Une seule réponse par question </p>
 
-
-
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <% first_choice = ["A: Entendre le chant des vagues", "B: Ressentir le soleil sur ma peau", "C: Regarder la mer et les détails autour de moi"] %>
+  <div class="survey">
       <%= simple_form_for :choice, url: profile_path(id: current_user.id), method: :patch do |form| %>
-      <%= form.input :choice_1, as: :radio_buttons, collection: first_choice, label: "A la plage ce que j'aime c'est:"  %>
-      <%# <%= form.submit "Valider", class: "btn btn-primary" %>
-      <% end %>
-    </div>
-    <div class="carousel-item">
-      <% second_choice = ["A: Je procède par étape pour le résoudre", "B: Je réconforte la personne", "C: J'improvise une solution"] %>
-      <%= simple_form_for :choice, url: profile_path(id: current_user.id), method: :patch do |form| %>
-      <%= form.input :choice_2, as: :radio_buttons, collection: first_choice, label: "Pour résoudre un conflit je"  %>
-      <%# <%= form.submit "Valider", class: "btn btn-primary" %>
-      <% end %>
-    </div>
-    <div class="carousel-item">
-        <% third_choice = ["A: Je crie et je discute après", "B: Tel un volcan j'explose", "C: Je lance des regards noirs"] %>
-        <%= simple_form_for :choice, url: profile_path(id: current_user.id), method: :patch do |form| %>
-        <%= form.input :choice_3, as: :radio_buttons, collection: first_choice, label: "Quand tu es en colère.."  %>
+      <div class="questions">
+        <% first_choice = ["Entendre le chant des vagues", "Ressentir le soleil sur ma peau", "Regarder la mer et les détails autour de moi"] %>
+        <%= form.input :choice_1, as: :radio_buttons, collection: first_choice, label: "1) A la plage ce que j'aime c'est" %>
         <%# <%= form.submit "Valider", class: "btn btn-primary" %>
-        <% end %>
-    </div>
-    <div class="carousel-item">
-      <% fourth_choice = ["A: Etre guidé pour me détendre", "B: Un massage à 4 mains", "C: Manger sainement"] %>
-      <%= simple_form_for :choice, url: profile_path(id: current_user.id), method: :patch do |form| %>
-      <%= form.input :choice_4, as: :radio_buttons, collection: first_choice, label: "Pour prendre soin de moi :"  %>
-      <%= form.submit "Valider", class: "btn btn-primary" %>
+
+
+        <% second_choice = ["Je procède par étape pour le résoudre", "Je réconforte la personne", "J'improvise une solution"] %>
+        <%= form.input :choice_2, as: :radio_buttons, collection: first_choice, label: "2) Pour résoudre un conflit je"%>
+        <%# <%= form.submit "Valider", class: "btn btn-primary" %>
+
+        <% third_choice = ["Je crie et je discute après", "Tel un volcan j'explose", "Je lance des regards noirs"] %>
+        <%= form.input :choice_3, as: :radio_buttons, collection: first_choice, label: "3) Quand tu es en colère"%>
+        <%# <%= form.submit "Valider", class: "btn btn-primary" %>
+
+        <% fourth_choice = ["A: Etre guidé pour me détendre", "B: Un massage à 4 mains", "C: Manger sainement"] %>
+        <%= form.input :choice_4, as: :radio_buttons, collection: first_choice, label: "4) Pour prendre soin de moi"%>
+        <%= link_to profile_path do %>
+        <%= form.submit "Valider", class: "btn btn-primary"%>
+      <% end %>
       <% end %>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
 
+</div>
 
 
 
