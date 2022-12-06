@@ -1,4 +1,9 @@
 <div class="show-container">
+  <div class="show-back-to-index">
+    <%= link_to "/praticians" do %>
+      <%= image_tag "svg/cross.svg" %>
+    <% end %>
+  </div>
   <% if @pratician.photo.attached? %>
     <%= cl_image_tag(@pratician.photo.key, class: "show-photo")%>
   <% end %>
