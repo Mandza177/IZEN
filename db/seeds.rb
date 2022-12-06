@@ -45,25 +45,25 @@ puts "created users"
 
 puts "creating pratician"
 
-p0 = Pratician.create!(first_name: "Yann", last_name: "Lecocq", job: "Hypnose", phone_number: "06.09.82.16.04", email: "yannlecocqhypnose44@gmail.com", address: "62 Bd Jean Ingres 44300 St Herblain", symptom: s0, description: "Je m'appelle Yann et je suis spécialisé sur la gestion des émotions.On apprend à se faire confiance. Je vous aide à définir votre objectif et on le valide ensemble.Notre séance d’Hypnose est un voyage entre votre conscient et votre inconscient dans lequel vous êtes le seul au commande de vos pensées.Par le biais de suggestions verbales et visuelles très générales pour vivre votre propre expérience.")
+p0 = Pratician.create!(first_name: "Yann", last_name: "Lecocq", job: "Hypnose", phone_number: "06.09.82.16.04", email: "yannlecocqhypnose44@gmail.com", address: "62 Bd Jean Ingres 44300 St Herblain", symptom: s0, description: "Je m'appelle Yann et je suis spécialisé sur la gestion des émotions. On apprend à se faire confiance. Je vous aide à définir votre objectif et on le valide ensemble. Notre séance d’Hypnose est un voyage entre votre conscient et votre inconscient dans lequel vous êtes le seul au commande de vos pensées. Par le biais de suggestions verbales et visuelles très générales pour vivre votre propre expérience.")
 
-p1 = Pratician.create!(first_name: "Edith", last_name: "Wernert", job: "Hypnose", phone_number: "07.64.48.22.11", email: "edith.werner@gmail.com", address: "62 Bd Jean Ingres 44300 St Herblain", symptom: s1, description: "En 2008, passionnée par ce métier, je me suis installée en tant que thérapeute en cabinet.Par la suite, je me suis spécialisée dans l’ARRÊT DU TABAC et l’AMINCISSEMENT.J'anime des formations dans le domaine des THERAPIES ENERGETIQUES (Reiki, Lahotchi…) et d’HYPNOSE (Auto-hypnose, EFT, TIPI, Cohérence Cardiaque, Fleurs de Bach etc…).")
+p1 = Pratician.create!(first_name: "Edith", last_name: "Wernert", job: "Hypnose", phone_number: "07.64.48.22.11", email: "edith.werner@gmail.com", address: "62 Bd Jean Ingres 44300 St Herblain", symptom: s1, description: "En 2008, passionnée par ce métier, je me suis installée en tant que thérapeute en cabinet. Par la suite, je me suis spécialisée dans l’ARRÊT DU TABAC et l’AMINCISSEMENT. J'anime des formations dans le domaine des THERAPIES ENERGETIQUES (Reiki, Lahotchi…) et d’HYPNOSE (Auto-hypnose, EFT, TIPI, Cohérence Cardiaque, Fleurs de Bach etc…).")
 
-p2 = Pratician.create!(first_name: "Laurence", last_name: "Bobet", job: "Hypnose", phone_number: "07.49.31.25.49", email: "laurence.bobet@gmail.com", address: "62 Bd Jean Ingres 44300 St Herblain", symptom: s2, description: "J'exerce depuis 2 ans avec l'Hypnose Sajece. Sous formes d'histoires métahporiques et de sugestions à votre inconscient qui élabore une nouvelle stratégie de changement")
+p2 = Pratician.create!(first_name: "Laurence", last_name: "Bobet", job: "Hypnose", phone_number: "07.49.31.25.49", email: "laurence.bobet@gmail.com", address: "62 Bd Jean Ingres 44300 St Herblain", symptom: s2, description: "J'exerce depuis 2 ans avec l'Hypnose Sajece. Sous forme d'histoires métahporiques et de sugestions à votre inconscient qui élabore une nouvelle stratégie de changement")
 
 p3 = Pratician.create!(first_name: "Claire", last_name: "Pelletier", job: "Hypnose", phone_number: "06.85.62.14.42", email: "claire.pelletier@gmail.com", address: "62 Bd Jean Ingres 44300 St Herblain", symptom: s3, description: "Je m’appelle Claire, J’accompagne maintenant les enfants de façon individuelle dans leurs apprentissages. Formée en psychopédagogie (la Fabrique à Bonheur) et consultante en intégration des réflexes archaïques (méthode RMTi®), je comprends aussi les besoins des enfants à haut potentiel et hyper sensibles.")
 
 p4 = Pratician.create!(first_name: "Gilles", last_name: "Chehade", job: "Hypnose", phone_number: " 07.66.39.73.94", email: "gilles@hypno.cat", address: "62 Bd Jean Ingres 44300 St Herblain", symptom: s4, description: "J’ai découvert l’hypnose en 2015 avec beaucoup de curiosité et de scepticisme pour une pratique qui me semblait peu rationnelle. J’ai entrepris de me former pour mieux la comprendre et suis devenu praticien l’année suivante, convaincu que cette pratique était non seulement bien rationnelle mais devait surtout faire partie intégrante de ma vie.")
 
-p5 = Pratician.create!(first_name: "Georges", last_name: "ABOU KHALIL", job: "Osthéopathie", phone_number: "02.40.73.40.99", email: "aboukhalil@hotmail.fr", address: "6, rue de la Fauvette 44100 NANTES", symptom: s5, description: "En activité depuis 2021 je suis spécialisé dans les blessures sportives et la réducation musculeto squeletique.")
+p5 = Pratician.create!(first_name: "Georges", last_name: "ABOU KHALIL", job: "Ostéopathie", phone_number: "02.40.73.40.99", email: "aboukhalil@hotmail.fr", address: "6, rue de la Fauvette 44100 NANTES", symptom: s5, description: "En activité depuis 2021 je suis spécialisé dans les blessures sportives et la réducation musculeto squeletique.")
 
-p6 = Pratician.create!(first_name: "Aude", last_name: "BASSET", job: "Osthéopathie", phone_number: "06.61.25.23.63", email: "basset.aude@gmail.com", address: "13, rue Jean XXIII 44470 CARQUEFOU", symptom: s6, description: "L'ostéopathe réalise des manipulations non violentes afin de rétablir la mobilité des articulations, des muscles, des organes internes et des os. Il permet notamment de soulager les maux de dos, les entorses, mais aussi le stress, les règles douloureuses ou encore les migraines.")
+p6 = Pratician.create!(first_name: "Aude", last_name: "BASSET", job: "Ostéopathie", phone_number: "06.61.25.23.63", email: "basset.aude@gmail.com", address: "13, rue Jean XXIII 44470 CARQUEFOU", symptom: s6, description: "L'ostéopathe réalise des manipulations non violentes afin de rétablir la mobilité des articulations, des muscles, des organes internes et des os. Il permet notamment de soulager les maux de dos, les entorses, mais aussi le stress, les règles douloureuses ou encore les migraines.")
 
-p7 = Pratician.create!(first_name: "Justine ", last_name: "BONFILLON", job: "Osthéopathie", phone_number: "07.85.20.18.54", email: "justinebasset@gmail.com", address: "30 ter, rue Martin Luther King 44240 LA CHAPELLE SUR ERDRE ", symptom: s7, description: "L'ostéopathie est basée sur le principe que la santé et le bien-être d'une personne dépendent de la cohérence de ses os, de ses muscles, de ses organes, de ses ligaments et de son tissu conjonctif afin de maintenir un équilibre dans le corps. Par des manipulations, un ostéopathe peut redonner une capacité de mouvement à toutes les structures du corps. L’ostéopathe va examiner un patient d’un point de vue holistique. Ainsi, il ne traite pas un symptôme ou une maladie mais une personne à part entière. ")
+p7 = Pratician.create!(first_name: "Justine ", last_name: "BONFILLON", job: "Ostéopathie", phone_number: "07.85.20.18.54", email: "justinebasset@gmail.com", address: "30 ter, rue Martin Luther King 44240 LA CHAPELLE SUR ERDRE ", symptom: s7, description: "L'ostéopathie est basée sur le principe que la santé et le bien-être d'une personne dépendent de la cohérence de ses os, de ses muscles, de ses organes, de ses ligaments et de son tissu conjonctif afin de maintenir un équilibre dans le corps. Par des manipulations, un ostéopathe peut redonner une capacité de mouvement à toutes les structures du corps. L’ostéopathe va examiner un patient d’un point de vue holistique. Ainsi, il ne traite pas un symptôme ou une maladie mais une personne à part entière. ")
 
-p8 = Pratician.create!(first_name: "Daniel", last_name: "CHOPINEAUX", job: "Osthéopathie", phone_number: "07.85.20.18.54", email: "d.chopineaux@gmail.com", address: "2 bis, rue d'Herbauges 44310 SAINT LUMINE DE COUTAIS ", symptom: s8, description: "Je vous accueille également aujourd'hui à Saint-Lumine-de-Coutais, ayant intégré un Espace Santé dynamique sur ma commune de vie.J'interviens par ailleurs depuis 2003 à l'école d'ostéopathie de Nantes, IdHEO, en tant que formateur et encadrant clinique, en particulier dans l'approche neuro-végétative, crânienne et pédiatrique.")
+p8 = Pratician.create!(first_name: "Daniel", last_name: "CHOPINEAUX", job: "Ostéopathie", phone_number: "07.85.20.18.54", email: "d.chopineaux@gmail.com", address: "2 bis, rue d'Herbauges 44310 SAINT LUMINE DE COUTAIS ", symptom: s8, description: "Je vous accueille également aujourd'hui à Saint-Lumine-de-Coutais, ayant intégré un Espace Santé dynamique sur ma commune de vie.J'interviens par ailleurs depuis 2003 à l'école d'ostéopathie de Nantes, IdHEO, en tant que formateur et encadrant clinique, en particulier dans l'approche neuro-végétative, crânienne et pédiatrique.")
 
-p9 = Pratician.create!(first_name: "François ", last_name: "DE BOISJOLLY", job: "Osthéopathie", phone_number: "02.40.48.72.00", email: "frdeboisjolly@wanadoo.fr", address: "Cabinet d'Ostéopathie Monselet 12, rue de Carcouët", symptom: s9, description: "Le cabinet d'Ostéopathie Monselet assure les prises en charge des bébés, adolescents, adultes, personnes âgées, handicapés, sportifs, femmes enceintes...La prise de rendez-vous peut se faire sur DOCTOLIB.fr.Prendre rendez-vous en ligne")
+p9 = Pratician.create!(first_name: "François ", last_name: "DE BOISJOLLY", job: "Ostéopathie", phone_number: "02.40.48.72.00", email: "frdeboisjolly@wanadoo.fr", address: "Cabinet d'Ostéopathie Monselet 12, rue de Carcouët", symptom: s9, description: "Le cabinet d'Ostéopathie Monselet assure les prises en charge des bébés, adolescents, adultes, personnes âgées, handicapés, sportifs, femmes enceintes...La prise de rendez-vous peut se faire sur DOCTOLIB.fr.Prendre rendez-vous en ligne")
 
 p10 = Pratician.create!(first_name: "Gwénaëlle", last_name: "De Buor", job: "Chiropratique", phone_number: "06.23.92.73.23", email: "gwenaelledebuor@yahoo.fr", address: " 47 rue Littré 44100 Nantes", symptom: s10, description: "Gwénaëlle de Buor est Chiropratique Diplômé,Son cabinet accueille les adultes, les femmes enceintes, les nourrissons, les enfants, les sportifs, les personnes âgées...Les motifs de consultation sont divers :mal de dos, sciatiques, cruralgie, migraines, maux de tête")
 
@@ -73,7 +73,7 @@ p12 = Pratician.create!(first_name: "Linda", last_name: "Moie Meurou", job: "Chi
 
 p13 = Pratician.create!(first_name: "Claire", last_name: "Morosini", job: "Chiropratique", phone_number: "06.17.38.42.04", email: "morosini.chiro@gmail.com", address: "7 rue de la Jaunais Montoir-de-Bretagne (44550)", symptom: s2, description: "J’ai choisi d’étudier la chiropraxie car j’aime la façon de voir le corps humain dans sa globalité. La chiropraxie me permet de rechercher la cause du problème. Tous les jours sont différents car tous les êtres humains sont différents, et il faut savoir s’adapter. J’ai toujours été attirée par le fait d’aider les gens et cette profession me le permet.")
 
-p14 = Pratician.create!(first_name: "Manon ", last_name: "CHAIGNEAU", job: "Chiropratique", phone_number: "07 87 74 30 00", email: "mchaigneau.chiropraxie@gmail.com", address: " 3 avenue Gustave Lusseaud Saint-Brevin-les-Pins (44250)", symptom: s3, description: "Mon envie de prendre soin des autres et de connaître l’étendue des capacités du corps humain m’ont poussé à faire des études de chiropraxie.Etre intégrée dans le parcours de soin d’une personne pour améliorer sa qualité de vie")
+p14 = Pratician.create!(first_name: "Manon ", last_name: "CHAIGNEAU", job: "Chiropratique", phone_number: "07 87 74 30 00", email: "mchaigneau.chiropraxie@gmail.com", address: " 3 avenue Gustave Lusseaud Saint-Brevin-les-Pins (44250)", symptom: s3, description: "Mon envie de prendre soin des autres et de connaître l’étendue des capacités du corps humain m’ont poussé à faire des études de chiropraxie. Etre intégrée dans le parcours de soin d’une personne pour améliorer sa qualité de vie.")
 
 p15 = Pratician.create!(first_name: "Laetitia", last_name: "Machard", job: "Naturopathie", phone_number: "06.29.59.88.27", email: "http://laetitiamachard.site-solocal.com", address: "1 rue Bons Français 44000 Nantes ", symptom: s4, description: "En une ou deux séances, apprenez à mieux vous connaître et gagnez en vitalité et en joie de vivre grâce à la naturopathie.Quelque soit votre demande, je prendrai le temps d'y répondre avec le plus grand soin.")
 
@@ -81,10 +81,9 @@ p16 = Pratician.create!(first_name: "Bénédicte", last_name: "GIE", job: "Natur
 
 p17 = Pratician.create!(first_name: "Eric", last_name: "Blasin", job: "Naturopathie", phone_number: "02.40.76.74.64", email: "http://www.naturopathe-iridologue.com", address: " 99 boulevard Anglais 44100 Nantes", symptom: s5, description: "Eric Blasin, naturopathe Nantes, iridologue et auriculothérapeute propose un autre regard sur la santé et le bien être dans le quartier Procès à Nantes.Ces différentes techniques vous sont proposées : Naturopathie, iridologie, auriculothérapie, thérapie quantique, Miltaled, Physioscan, conseil en diététique et hygiène de vie, oligo-éléments, fleurs de Bach, huiles essentielles, micronutrition et phytothérapie.")
 
-p18 = Pratician.create!(first_name: "Juillard", last_name: "Nathalie", job: "Naturopathie", phone_number: "06.85.57.21.66", email: "http://www.nathaliejuillard.com", address: "49 rue Gourmette 44300 Nantes", symptom: s6, description: "Depuis toujours j’ai une sensibilité à la médecine naturelle et à la spiritualité.Plutôt, j’ai débuté dans la vie active en travaillant en entreprises dans le secteur du commerce, j’aime le contact avec l’humain et il me manquait quelque chose qui est plus de sens pour moi. Il me manquait plus de profondeur et d’un véritable intérêt à œuvrer, moi qui suis toujours en quête de sens.")
+p18 = Pratician.create!(first_name: "Nathalie", last_name: "Juillard", job: "Naturopathie", phone_number: "06.85.57.21.66", email: "http://www.nathaliejuillard.com", address: "49 rue Gourmette 44300 Nantes", symptom: s6, description: "Depuis toujours j’ai une sensibilité à la médecine naturelle et à la spiritualité.Plutôt, j’ai débuté dans la vie active en travaillant en entreprises dans le secteur du commerce, j’aime le contact avec l’humain et il me manquait quelque chose qui est plus de sens pour moi. Il me manquait plus de profondeur et d’un véritable intérêt à œuvrer, moi qui suis toujours en quête de sens.")
 
 p19 = Pratician.create!(first_name: "Aurélie", last_name: "Pereira", job: "Naturopathie", phone_number: "06.79.28.55.07", email: "http://www.lalyreikienergies.com", address: "rue Pays de la Loire 44300 Nantes", symptom: s7, description: "Maître Enseignante et Praticienne Reiki Usui, Prêtresse d’Isis, formatrice, naturopathe certifiée et magnétiseuse depuis toujours, je suis une louve, une guerrière de lumière, une (bonne) sorcière, je t’accompagne, t’aide, t’écoute, te transmets mon savoir et mes énergies…")
-
 
 p20 = Pratician.create!(first_name: "Jordane", last_name: "Saunal", job: "Sonothérapie", phone_number: "06.85.85.44.64", email: "http://jordanesaunal-sonotherapie.com", address: "52 avenue Parc de Procé 44100 Nantes", symptom: s8, description: "Dans mon approche de la sonothérapie je donne une grande place à l’écoute de mon intuition, aux ressentis énergétiques qui me servent de guides. J’utilise, lors des séances, des instruments qui me sont chers tels que les bols tibétains, bols chantants, gong, carillons")
 
@@ -113,6 +112,36 @@ user02.photo.attach(io: file, filename: "Jules.jpg", content_type: "image/jpg")
 
 file = URI.open("https://res.cloudinary.com/df1pesufu/image/upload/v1669818718/Jean_kwu21d.jpg")
 user03.photo.attach(io: file, filename: "Jean.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317099/37_htrvdn.jpg")
+user04.photo.attach(io: file, filename: "Sadi.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317522/75_emioax.jpg")
+user05.photo.attach(io: file, filename: "Félix.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317522/23_z1jd17.jpg")
+user06.photo.attach(io: file, filename: "Émile.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317522/16_zfoh80.jpg")
+user07.photo.attach(io: file, filename: "Armand.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317522/39_n81thd.jpg")
+user08.photo.attach(io: file, filename: "Raymond.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317972/73_h0ili1.jpg")
+user09.photo.attach(io: file, filename: "Paul.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317972/48_ykt6es.jpg")
+user10.photo.attach(io: file, filename: "Alexandre.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317972/71_khsjl3.jpg")
+user11.photo.attach(io: file, filename: "Gaston.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317972/46_djsisl.jpg")
+user12.photo.attach(io: file, filename: "Paul.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317972/34_d3amlx.jpg")
+user13.photo.attach(io: file, filename: "Albert.jpg", content_type: "image/jpg")
 
 puts "created photos for users"
 
