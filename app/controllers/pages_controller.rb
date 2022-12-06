@@ -17,15 +17,15 @@ class PagesController < ApplicationController
     @praticians = Pratician.where("praticians.job @@ :job", job: params[:job])
   end
 
-  def ostheopathie
+  def osteopathie
+    @praticians = Pratician.where("praticians.job @@ :job", job: params[:job])
   end
 
   def naturopathie
-  end
-
-  def chiropratique
+    @praticians = Pratician.where("praticians.job @@ :job", job: params[:job])
   end
 
   def sonotherapie
+    @praticians = Pratician.where("praticians.job @@ :job", job: params[:job])
   end
 end
