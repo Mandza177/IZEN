@@ -1,6 +1,6 @@
 class ProfilesController < ApplicationController
   def edit
-
+    @praticians = Pratician.includes(:pratician_images).order("created_at DESC")
   end
 
   def update
