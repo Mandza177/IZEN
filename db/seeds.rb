@@ -110,7 +110,7 @@ user01.photo.attach(io: file, filename: "Patrice.png", content_type: "image/jpg"
 file = URI.open("https://res.cloudinary.com/df1pesufu/image/upload/v1669740525/erkan-kirdar-sTAlYP5P1rQ-unsplash_pd5kmz.jpg")
 user02.photo.attach(io: file, filename: "Jules.jpg", content_type: "image/jpg")
 
-file = URI.open("https://res.cloudinary.com/df1pesufu/image/upload/v1669818718/Jean_kwu21d.jpg")
+file = URI.open("https://res.cloudinary.com/df1pesufu/image/upload/v1670336206/vieux_hxfqof.jpg")
 user03.photo.attach(io: file, filename: "Jean.jpg", content_type: "image/jpg")
 
 file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317099/37_htrvdn.jpg")
