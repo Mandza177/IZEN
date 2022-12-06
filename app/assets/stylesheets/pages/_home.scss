@@ -27,9 +27,9 @@
   // display: flex;
   // background-color: transparent;
   input{
-    color: black;
+    color: $color-job;
     font-family: $font-text;
-    font-size: 15px;
+    font-size: 400;
   }
 }
 
@@ -50,15 +50,20 @@
   margin-top: 40px;
 }
 
+#query {
+  color: $color-job;
+}
+
 .btn-ghost {
 
   background-color: $color-logo;
-  border: 2px solid #000000;
+  // border: 2px solid #000000;
   padding: 8px 24px;
   border-radius: 50px;
-  // font-weight: lighter;
+  font-weight: 400;
   // opacity: 0.6;
   transition: opacity 0.3s ease;
+  font-family: $title-job;
 }
 
 .btn-ghost:hover {
@@ -73,6 +78,11 @@
   input {
     width: 100%;
   }
+}
+
+input:focus{
+  outline: none !important;
+  border-bottom: 2px solid #FEC3A7;
 }
 
 .container-cercles{

@@ -1,6 +1,9 @@
   <div class="navbar navbar-expand-sm navbar-light ">
     <div class="container-fluid">
-      <i id="back_home" class="fa-solid fa-house"></i>
+      <%= link_to "/" do %>
+        <%= image_tag "svg/home_navbar.svg" %>
+      <% end %>
+
       <div class="log-area">
         <% if user_signed_in? %>
           <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "log-out" %>
