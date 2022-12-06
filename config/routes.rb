@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "pages#home"
 
-  
+
   get "/hypnose",       to: "pages#hypnose"
   get "/naturopathie",  to: "pages#naturopathie"
   get "/ostheopathie",   to: "pages#ostheopathie"
@@ -15,6 +15,10 @@ Rails.application.routes.draw do
 
 
   resources :users, only: [:create, :update, :destroy]
-  resources :praticians, only: [:index, :show]
   resources :profiles, only: [:show, :edit, :update]
+
+  resources :praticians, only: [:index, :show] do
+    resources :favorites, only: [:create, :destroy]
+  end
+
 end
