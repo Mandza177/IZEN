@@ -29,14 +29,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 220px;
     margin-left: 15px;
   }
 
   h4{
     font-family: $title-card;
     width: 160px;
-    font-size: 20px;
+    font-size: 16px;
+    margin-bottom: 3px;
   }
 
   h5 {
@@ -45,9 +46,9 @@
     text-decoration: none;
     color: white;
     font-size: 16px;
-    width: 150px;
     font-family: $title-job;
     padding-bottom: 10px;
+    margin-left: 3px;
   }
 
   .container-position{
@@ -63,15 +64,20 @@
     color: $color-text;
     font-family: $font-text;
     font-size: 12px;
-    margin-left: 3px;
-    width: 110px;
+    margin-left: 10px;
   }
 
-  .container-heart{
+  p{
+    font-family: $title-card;
+    font-size: 14px;
+    margin-bottom: 0px;
     display: flex;
+    justify-content: right;
+  }
 
-    color: $color-logo;
-    font-size: 25px;
+  .heart{
+  background:$color-two;
+  border: none;
   }
 
 }

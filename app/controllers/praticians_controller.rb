@@ -28,4 +28,5 @@ class PraticiansController < ApplicationController
   def show
     @pratician = Pratician.find(params[:id])
   end
+
 end
