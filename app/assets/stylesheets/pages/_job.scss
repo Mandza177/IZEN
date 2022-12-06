@@ -1,7 +1,8 @@
 .container-job{
   padding: 30px;
   color: white;
-
+  font-family: $font-text;
+  text-indent: 30px;
 }
 .title-rubrique{
 
@@ -13,10 +14,6 @@
     justify-content: center;
     margin-top: 25px;
   }
-}
-.text-job{
-
-  font-family: $font-text;
 }
 
 .container-btn-job{
@@ -54,3 +51,11 @@
   justify-content: center;
   align-items: center;
 }
+
+.inner-link-sono a{
+  color : $color-logo;
+ }
+
+ .inner-link-sono a:hover{
+  color : white;
+ }
