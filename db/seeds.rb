@@ -85,7 +85,6 @@ p18 = Pratician.create!(first_name: "Juillard", last_name: "Nathalie", job: "Nat
 
 p19 = Pratician.create!(first_name: "Aurélie", last_name: "Pereira", job: "Naturopathie", phone_number: "06.79.28.55.07", email: "http://www.lalyreikienergies.com", address: "rue Pays de la Loire 44300 Nantes", symptom: s7, description: "Maître Enseignante et Praticienne Reiki Usui, Prêtresse d’Isis, formatrice, naturopathe certifiée et magnétiseuse depuis toujours, je suis une louve, une guerrière de lumière, une (bonne) sorcière, je t’accompagne, t’aide, t’écoute, te transmets mon savoir et mes énergies…")
 
-
 p20 = Pratician.create!(first_name: "Jordane", last_name: "Saunal", job: "Sonothérapie", phone_number: "06.85.85.44.64", email: "http://jordanesaunal-sonotherapie.com", address: "52 avenue Parc de Procé 44100 Nantes", symptom: s8, description: "Dans mon approche de la sonothérapie je donne une grande place à l’écoute de mon intuition, aux ressentis énergétiques qui me servent de guides. J’utilise, lors des séances, des instruments qui me sont chers tels que les bols tibétains, bols chantants, gong, carillons")
 
 p21 = Pratician.create!(first_name: "Marielle", last_name: "PICART", job: "Sonothérapie", phone_number: "06.82.51.56.58", email: "http://mariellepicart-kinesiologie.com/", address: "24 rue Noire 44000 Nantes", symptom: s9, description: "Et s’il était possible d’établir un dialogue avec le corps pour identifier les sources inconscientes de nos déséquilibres. C'est une pratique de communication subtile et directe avec le corps, lui permettant d’initier des changements pour un mieux-être intérieur.")
@@ -113,6 +112,36 @@ user02.photo.attach(io: file, filename: "Jules.jpg", content_type: "image/jpg")
 
 file = URI.open("https://res.cloudinary.com/df1pesufu/image/upload/v1669818718/Jean_kwu21d.jpg")
 user03.photo.attach(io: file, filename: "Jean.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317099/37_htrvdn.jpg")
+user04.photo.attach(io: file, filename: "Sadi.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317522/75_emioax.jpg")
+user05.photo.attach(io: file, filename: "Félix.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317522/23_z1jd17.jpg")
+user06.photo.attach(io: file, filename: "Émile.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317522/16_zfoh80.jpg")
+user07.photo.attach(io: file, filename: "Armand.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317522/39_n81thd.jpg")
+user08.photo.attach(io: file, filename: "Raymond.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317972/73_h0ili1.jpg")
+user09.photo.attach(io: file, filename: "Paul.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317972/48_ykt6es.jpg")
+user10.photo.attach(io: file, filename: "Alexandre.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317972/71_khsjl3.jpg")
+user11.photo.attach(io: file, filename: "Gaston.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317972/46_djsisl.jpg")
+user12.photo.attach(io: file, filename: "Paul.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317972/34_d3amlx.jpg")
+user13.photo.attach(io: file, filename: "Albert.jpg", content_type: "image/jpg")
 
 puts "created photos for users"
 
