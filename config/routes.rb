@@ -2,10 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "pages#home"
 
-  
   get "/hypnose",       to: "pages#hypnose"
   get "/naturopathie",  to: "pages#naturopathie"
-  get "/ostheopathie",   to: "pages#ostheopathie"
+  get "/osteopathie",   to: "pages#osteopathie"
   get "/chiropratique", to: "pages#chiropratique"
   get "/sonotherapie",  to: "pages#sonotherapie"
 
