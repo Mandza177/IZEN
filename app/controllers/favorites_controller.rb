@@ -1,6 +1,6 @@
 class FavoritesController < ApplicationController
 
-  before_action :set_pratician, only: [:create, :destroy]
+  before_action :set_pratician, only: [:create]
 
   def index
     @praticians = Pratician.includes(:pratician_images).order("created_at DESC")
@@ -12,9 +12,9 @@ class FavoritesController < ApplicationController
   end
 
   def destroy
-    @favorite = Favorite.find_by(pratician_id: params[:pratician_id],user_id: current_user.id)
+    @favorite = Favorite.find(params[:id])
     @favorite.destroy
-    redirect_to pratician_path(@pratician.id)
+    redirect_to praticians_path
   end
 
   def set_pratician

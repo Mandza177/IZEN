@@ -18,12 +18,23 @@
         <h4><%= pratician.first_name %> <%= pratician.last_name.upcase %></h4>
         <h5><%= pratician.job %></h5>
         <div class="fa-solid fa-location-dot container-position"><h6>  <%= pratician.address %></h6></div>
+        <div><p>à partir de<%= pratician.price %>€</p></div>
     <% end %>
     </div>
-    <%= button_to pratician_favorites_path(pratician), data:{ turbo_method: :post} do%>
-      <div class="container-heart">
-        <i class="fa-regular fa-heart"></i>
-      </div>
+    <% if Favorite.where(user: current_user, pratician: pratician).first %>
+      <%= button_to favorite_path(Favorite.where(user: current_user, pratician: pratician).first), method: :delete, class:"heart" do%>
+        <div class="container-heart">
+        <%= image_tag "svg/favorites_add.svg" %>
+        </div>
+      <% end %>
+
+    <% else %>
+      <%= button_to pratician_favorites_path(pratician), data:{ turbo_method: :post}, class:"heart" do%>
+        <div class="container-heart">
+        <%= image_tag "svg/heart_favorites.svg" %>
+        </div>
+      <% end %>
+
     <% end %>
   </div>
 <% end %>

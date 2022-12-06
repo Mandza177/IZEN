@@ -17,7 +17,8 @@ Rails.application.routes.draw do
   resources :profiles, only: [:show, :edit, :update]
 
   resources :praticians, only: [:index, :show] do
-    resources :favorites, only: [:create, :destroy]
+    resources :favorites, only: [:create]
   end
 
+  resources :favorites, only: [:destroy]
 end
