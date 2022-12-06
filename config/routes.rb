@@ -14,6 +14,10 @@ Rails.application.routes.draw do
 
 
   resources :users, only: [:create, :update, :destroy]
-  resources :praticians, only: [:index, :show]
   resources :profiles, only: [:show, :edit, :update]
+
+  resources :praticians, only: [:index, :show] do
+    resources :favorites, only: [:create, :destroy]
+  end
+
 end
