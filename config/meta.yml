@@ -1,0 +1,5 @@
+meta_product_name: "IZEN"
+meta_title: "IZEN - Prendre soin de soi est désormais facile"
+meta_description: "Trouver facilement un praticien Bien être près de chez soi et adapté à nos besoins"
+meta_image: "Izen.jpg" # should exist in `app/assets/images/`
+twitter_account: "@product_twitter_account"   # required for Twitter Cards
