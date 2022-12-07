@@ -28,4 +28,8 @@ class PagesController < ApplicationController
   def sonotherapie
     @praticians = Pratician.where("praticians.job @@ :job", job: params[:job])
   end
+
+  def arttherapie
+    @praticians = Pratician.where("praticians.job @@ :job", job: params[:job])
+  end
 end
