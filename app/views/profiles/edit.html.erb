@@ -26,7 +26,7 @@
         <% fourth_choice = ["a) Etre guidé pour me détendre", "b) Un massage à 4 mains", "c) Manger sainement"] %>
         <%= form.input :choice_4, as: :radio_buttons, collection: fourth_choice, label: "4) Pour prendre soin de moi"%>
         <%= link_to profile_path do %>
-        <%= form.submit "Valider", class: "btn btn-primary"%>
+        <%= form.submit "Valider", class: "validates btn btn-primary"%>
       <% end %>
       <% end %>
     </div>
