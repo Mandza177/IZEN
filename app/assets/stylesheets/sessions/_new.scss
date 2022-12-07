@@ -23,10 +23,20 @@
   }
 }
 
-.form-control:focus{
+#user_email:focus {
   outline: none !important;
   border-bottom: 2px solid #FEC3A7 !important;
+  box-shadow: none;
+  border: none;
 }
+
+#user_password:focus {
+  outline: none !important;
+  border-bottom: 2px solid #FEC3A7 !important;
+  box-shadow: none;
+  border: none;
+}
+
 
 .form-label {
   color: $color-job;
@@ -56,9 +66,30 @@
 .form-actions {
   background-color: #FEC3A7;
   border-radius: 20px;
-  width: 100px;
+  width: 120px;
   margin-left: 135px;
   display: flex;
   justify-content: center;
   margin-bottom: 5px;
+
+
+}
+
+.begin {
+  a {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: $color-text;
+    margin-top: 50px;
+  }
+}
+
+.forgot {
+  a {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: $color-text;
+  }
 }

@@ -4,7 +4,6 @@ class ProfilesController < ApplicationController
   end
 
   def update
-
     # params[:choice]["choice_1"][0]
     # params[:choice]["choice_2"][0]
     # params[:choice]["choice_3"][0]

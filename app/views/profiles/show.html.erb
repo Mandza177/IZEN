@@ -43,25 +43,25 @@
     </div>
   </div>
 
-
+<div>
   <% @favorite_praticians.each do |favorite_pratician| %>
-      <div class="card">
-    <%= link_to pratician_path(favorite_pratician)do %>
-      <% if favorite_pratician.photo.attached? %>
-      <%= cl_image_tag(favorite_pratician.photo.key, class: "avatar-index")%>
-      <% end %>
-        <%# <%= cl_image_tag(favorite_pratician.photo.key, class: "avatar-index")%>
+    <div class="card">
+      <%= link_to pratician_path(favorite_pratician)do %>
+        <% if favorite_pratician.photo.attached? %>
+        <%= cl_image_tag(favorite_pratician.photo.key, class: "avatar-index")%>
+        <% end %>
           <div class="container-card">
             <h4><%= favorite_pratician.first_name %> <%= favorite_pratician.last_name %></h4>
             <h5><%= favorite_pratician.job %></h5>
             <div class="fa-solid fa-location-dot container-position"><h6>  <%= favorite_pratician.address %></h6></div>
             <div>à partir de <%= favorite_pratician.price %>€</div>
-
-            <div class="container-heart">
-            <%= image_tag "svg/heart_favorites.svg" %>
-            </div>
-          <% end %>
-        </div>
+      <% end %>
       </div>
+        <%= button_to favorite_path(Favorite.where(user: current_user, pratician: favorite_pratician).first), method: :delete, class:"heart" do%>
+              <div class="container-heart">
+              <%= image_tag "svg/favorites_add.svg" %>
+              </div>
+        <% end %>
+    </div>
   <% end %>
 </div>
