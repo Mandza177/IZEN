@@ -1,20 +1,26 @@
 .survey-container{
+  padding-top: 0px !important;
+  padding-inline: 30px;
 
-  font-size: 17px;
-
-  font-family: 'Bree Serif', 'Serif';
+  h2{
+    font-size: 38px;
+    text-align: center;
+    font-family: $title-card;
+    color: $color-job;
+    margin-bottom: 20px;
+  }
 }
 
 
 
 .form-title {
 
-  H2 {
-    color: #FEC3A7;
-    font-family: 'Bree Serif', 'Serif';
-    display: flex;
-    justify-content: center;
-  }
+  // H2 {
+  //   color: #FEC3A7;
+  //   font-family: 'Bree Serif', 'Serif';
+  //   display: flex;
+  //   justify-content: center;
+  // }
 
   p {
     display: flex;
@@ -52,10 +58,18 @@
 }
 
 .col-form-label {
+  font-size: 20px;
+  font-family: $title-job;
   color: #FEC3A7;
 }
 
+<<<<<<< HEAD:app/assets/stylesheets/pages/edit.scss
 .validates{
   margin-left: 110px;
+=======
+.btn{
+  margin-top:30px;
+  margin-left: 120px;
+>>>>>>> 39f89ad2eba704f8faa72dcaac55c5bb3cf53290:app/assets/stylesheets/pages/_edit.scss
   color: black;
 }
