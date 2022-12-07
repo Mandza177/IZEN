@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "/chiropratique", to: "pages#chiropratique"
   get "/sonotherapie",  to: "pages#sonotherapie"
   get "/arttherapie",   to: "pages#arttherapie"
+  get "/shiatsu",       to: "pages#shiatsu"
 
   get "/thematique1",  to: "pages#thematique1"
   get "/thematique2",  to: "pages#thematique2"

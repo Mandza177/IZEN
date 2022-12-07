@@ -32,4 +32,8 @@ class PagesController < ApplicationController
   def arttherapie
     @praticians = Pratician.where("praticians.job @@ :job", job: params[:job])
   end
+
+  def shiatsu
+    @praticians = Pratician.where("praticians.job @@ :job", job: params[:job])
+  end
 end
