@@ -6,7 +6,7 @@ class ProfilesController < ApplicationController
   def update
 
     # redirect_to profile_path
-    
+
     params[:choice][choice_1][0]
     params[:choice][choice_2][0]
     params[:choice][choice_3][0]
@@ -25,9 +25,10 @@ class ProfilesController < ApplicationController
     params[:choice][choice_3][2]
     params[:choice][choice_4][2]
     current_user.result_test = "Visuel"
-
   end
 
   def show
     @favorite_praticians = current_user.praticians
   end
+
+end
