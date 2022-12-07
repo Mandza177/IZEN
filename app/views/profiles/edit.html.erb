@@ -10,21 +10,21 @@
   <div class="survey">
       <%= simple_form_for :choice, url: profile_path(id: current_user.id), method: :patch do |form| %>
       <div class="questions">
-        <% first_choice = ["Entendre le chant des vagues", "Ressentir le soleil sur ma peau", "Regarder la mer et les détails autour de moi"] %>
+        <% first_choice = ["a) Entendre le chant des vagues", "b) Ressentir le soleil sur ma peau", "c) Regarder la mer et les détails autour de moi"] %>
         <%= form.input :choice_1, as: :radio_buttons, collection: first_choice, label: "1) A la plage ce que j'aime c'est" %>
         <%# <%= form.submit "Valider", class: "btn btn-primary" %>
 
 
-        <% second_choice = ["Je procède par étape pour le résoudre", "Je réconforte la personne", "J'improvise une solution"] %>
-        <%= form.input :choice_2, as: :radio_buttons, collection: first_choice, label: "2) Pour résoudre un conflit je"%>
+        <% second_choice = ["a) Je procède par étape pour le résoudre", "b) Je réconforte la personne", "c) J'improvise une solution"] %>
+        <%= form.input :choice_2, as: :radio_buttons, collection: second_choice, label: "2) Pour résoudre un conflit je"%>
         <%# <%= form.submit "Valider", class: "btn btn-primary" %>
 
-        <% third_choice = ["Je crie et je discute après", "Tel un volcan j'explose", "Je lance des regards noirs"] %>
-        <%= form.input :choice_3, as: :radio_buttons, collection: first_choice, label: "3) Quand tu es en colère"%>
+        <% third_choice = ["a) Je crie et je discute après", "b) Tel un volcan j'explose", "c) Je lance des regards noirs"] %>
+        <%= form.input :choice_3, as: :radio_buttons, collection: third_choice, label: "3) Quand tu es en colère"%>
         <%# <%= form.submit "Valider", class: "btn btn-primary" %>
 
-        <% fourth_choice = ["A: Etre guidé pour me détendre", "B: Un massage à 4 mains", "C: Manger sainement"] %>
-        <%= form.input :choice_4, as: :radio_buttons, collection: first_choice, label: "4) Pour prendre soin de moi"%>
+        <% fourth_choice = ["a) Etre guidé pour me détendre", "b) Un massage à 4 mains", "c) Manger sainement"] %>
+        <%= form.input :choice_4, as: :radio_buttons, collection: fourth_choice, label: "4) Pour prendre soin de moi"%>
         <%= link_to profile_path do %>
         <%= form.submit "Valider", class: "btn btn-primary"%>
       <% end %>
