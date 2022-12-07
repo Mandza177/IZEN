@@ -8,13 +8,13 @@ class FavoritesController < ApplicationController
 
   def create
     @favorite = Favorite.create(pratician_id: params[:pratician_id],user_id: current_user.id)
-    redirect_to praticians_path
+    redirect_back fallback_location: root_path
   end
 
   def destroy
     @favorite = Favorite.find(params[:id])
     @favorite.destroy
-    redirect_to praticians_path
+    redirect_back fallback_location: root_path
   end
 
   def set_pratician

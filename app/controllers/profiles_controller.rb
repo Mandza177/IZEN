@@ -12,6 +12,8 @@ class ProfilesController < ApplicationController
     @favorite_praticians = current_user.praticians
   end
 
+
+
   private
 
   # def survey_algo
