@@ -64,9 +64,12 @@
   font-size: 20px;
 }
 
-.show-tag-price{
-  border:1px solid red;
-  color:white;
+#show-tag-price{
+  color:$color-job;
+  font-family: $font-text;
+  font-style: italic;
+  padding: 0;
+  text-align:right;
 }
 
 .show-tag-job a{
