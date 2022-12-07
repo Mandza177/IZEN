@@ -119,7 +119,7 @@ select:-webkit-autofill:focus {
   background-color: transparent;
   font-family: $font-text;
   color: $color-text;
-  font-size: x-large;
+  font-size: large;
   -webkit-text-fill-color: $color-text;
   transition: background-color 5000s ease-in-out 0s;
 }
