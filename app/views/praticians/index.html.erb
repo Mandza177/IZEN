@@ -18,7 +18,7 @@
         <h4><%= pratician.first_name %> <%= pratician.last_name.upcase %></h4>
         <h5><%= pratician.job %></h5>
         <div class="fa-solid fa-location-dot container-position"><h6>  <%= pratician.address %></h6></div>
-        <div><p>à partir de <%= pratician.price %>€</p></div>
+        <div><p>A partir de <%= pratician.price %>€</p></div>
     <% end %>
     </div>
     <% if Favorite.where(user: current_user, pratician: pratician).first %>

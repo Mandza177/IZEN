@@ -11,16 +11,19 @@
     <h3><strong><%= current_user.first_name %> <%= current_user.last_name %></strong></h3>
   </div>
 
+  <% if current_user.result_test == nil %>
+    <%= link_to edit_profile_path do %>
+        <div class="text-themes">
+          <p>Remplisser le questionnaire pour connaitre votre profil thérapeutique</p>
+        </div>
+    <% end %>
+  <% else %>
+      <div class="text-themes">
+        <p>Vous êtes quelqu'un de <%= current_user.result_test %></p>
+      </div>
 
-  <div class="themes">
-    <div class="text-themes">
-      <p>Selon vos réponses à notre formulaire, votre profil correspond à celui de:</p>
-    </div>
+  <% end %>
 
-    <div class="text-themes2">
-      <p>Vous êtes quelqu'un de </p>
-    </div>
-  </div>
 
   <div class="profile-info">
     <div class="title-informations">
@@ -44,9 +47,9 @@
     </div>
   </div>
 
-<div>
+
   <% @favorite_praticians.each do |favorite_pratician| %>
-    <div class="card">
+    <div class="card card-show">
       <%= link_to pratician_path(favorite_pratician)do %>
         <% if favorite_pratician.photo.attached? %>
         <%= cl_image_tag(favorite_pratician.photo.key, class: "avatar-index")%>
@@ -55,7 +58,7 @@
             <h4><%= favorite_pratician.first_name %> <%= favorite_pratician.last_name %></h4>
             <h5><%= favorite_pratician.job %></h5>
             <div class="fa-solid fa-location-dot container-position"><h6>  <%= favorite_pratician.address %></h6></div>
-            <div>à partir de <%= favorite_pratician.price %>€</div>
+            <div><p>à partir de <%= favorite_pratician.price %>€</p></div>
       <% end %>
       </div>
         <%= button_to favorite_path(Favorite.where(user: current_user, pratician: favorite_pratician).first), method: :delete, class:"heart" do%>
@@ -65,4 +68,3 @@
         <% end %>
     </div>
   <% end %>
-</div>
