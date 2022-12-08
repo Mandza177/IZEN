@@ -26,20 +26,22 @@ puts "created SYMPTOMS done"
 
 puts "creating users"
 
-user00 = User.create!(first_name: "Adolphe", last_name: "Thiers", email: "adolphe.thiers@gmail.com", password: "azerty", location: "Nantes", result_test: "visuel")
-user01 = User.create!(first_name: "Patrice", last_name: "de Mac Mahon", email: "patrice.macmahon@gmail.com", password: "azerty", location: "Nantes", result_test: "corporel")
-user02 = User.create!(first_name: "Jules", last_name: "Grévy", email: "jules.grevy@gmail.com", password: "azerty", location: "Nantes", result_test: "auditif")
-user03 = User.create!(first_name: "Sadi", last_name: "Carnot", email: "sadi.carnot@gmail.com", password: "azerty", location: "Nantes", result_test: "auditif")
-user04 = User.create!(first_name: "Jean", last_name: "Casimir-Perier", email: "jean.casimir-perier@gmail.com", password: "azerty", location: "", result_test: "auditif")
-user05 = User.create!(first_name: "Félix", last_name: "Faure", email: "felix.faure@gmail.com", password: "azerty", location: "Nantes", result_test: "visuel")
-user06 = User.create!(first_name: "Émile", last_name: "Loubet", email: "emile.loubet@gmail.com", password: "azerty", location: "Nantes", result_test: "auditif")
-user07 = User.create!(first_name: "Armand", last_name: "Fallières", email: "armand.fallieres@gmail.com", password: "azerty", location: "Nantes", result_test: "corporel")
-user08 = User.create!(first_name: "Raymond", last_name: "Poincaré", email: "raymond.poincare@gmail.com", password: "azerty", location: "Nantes", result_test: "corporel")
-user09 = User.create!(first_name: "Paul", last_name: "Deschanel", email: "paul.deschanel@gmail.com", password: "azerty", location: "Nantes", result_test: "corporel")
-user10 = User.create!(first_name: "Alexandre", last_name: "Millerand", email: "alexandre.millerand@gmail.com", password: "azerty", location: "Nantes", result_test: "visuel")
-user11 = User.create!(first_name: "Gaston", last_name: "Doumergue", email: "gaston.doumergue@gmail.com", password: "azerty", location: "Nantes", result_test: "auditif")
-user12 = User.create!(first_name: "Paul", last_name: "Doumer", email: "paul.doumer@gmail.com", password: "azerty", location: "Nantes", result_test: "auditif")
-user13 = User.create!(first_name: "Albert", last_name: "Lebrun", email:"albert.lebrun@gmail.com", password: "azerty", location: "Nantes", result_test: "visuel")
+
+user00 = User.create!(first_name: "Adolphe", last_name: "Thiers", email: "adolphe.thiers@gmail.com", password: "azerty", location: "Nantes")
+user01 = User.create!(first_name: "Patrice", last_name: "de Mac Mahon", email: "patrice.macmahon@gmail.com", password: "azerty", location: "Nantes")
+user02 = User.create!(first_name: "Jules", last_name: "Grévy", email: "jules.grevy@gmail.com", password: "azerty", location: "Nantes")
+user03 = User.create!(first_name: "Sadi", last_name: "Carnot", email: "sadi.carnot@gmail.com", password: "azerty", location: "Nantes")
+user04 = User.create!(first_name: "Jean", last_name: "Casimir-Perier", email: "jean.casimir-perier@gmail.com", password: "azerty", location: "Nantes")
+user05 = User.create!(first_name: "Félix", last_name: "Faure", email: "felix.faure@gmail.com", password: "azerty", location: "Nantes")
+user06 = User.create!(first_name: "Émile", last_name: "Loubet", email: "emile.loubet@gmail.com", password: "azerty", location: "Nantes")
+user07 = User.create!(first_name: "Armand", last_name: "Fallières", email: "armand.fallieres@gmail.com", password: "azerty", location: "Nantes")
+user08 = User.create!(first_name: "Raymond", last_name: "Poincaré", email: "raymond.poincare@gmail.com", password: "azerty", location: "Nantes")
+user09 = User.create!(first_name: "Paul", last_name: "Deschanel", email: "paul.deschanel@gmail.com", password: "azerty", location: "Nantes")
+user10 = User.create!(first_name: "Alexandre", last_name: "Millerand", email: "alexandre.millerand@gmail.com", password: "azerty", location: "Nantes")
+user11 = User.create!(first_name: "Gaston", last_name: "Doumergue", email: "gaston.doumergue@gmail.com", password: "azerty", location: "Nantes")
+user12 = User.create!(first_name: "Paul", last_name: "Doumer", email: "paul.doumer@gmail.com", password: "azerty", location: "Nantes")
+user13 = User.create!(first_name: "Albert", last_name: "Lebrun", email:"albert.lebrun@gmail.com", password: "azerty", location: "Nantes")
+user14 = User.create!(first_name: "Yann", last_name: "Lecocq", email: "yann.lecocq@gmail.com", password: "azerty", location: "Nantes")
 
 puts "created users"
 
@@ -57,9 +59,9 @@ p4 = Pratician.create!(first_name: "Gilles", last_name: "Chehade", job: "Hypnose
 
 p5 = Pratician.create!(first_name: "Georges", last_name: "ABOU KHALIL", job: "Ostéopathie", phone_number: "02.40.73.40.99", email: "aboukhalil@hotmail.fr", address: "6, rue de la Fauvette 44100 NANTES", symptom: s5, price: 60, description: "En activité depuis 2021 je suis spécialisé dans les blessures sportives et la réducation musculeto squeletique.")
 
-p6 = Pratician.create!(first_name: "Aude", last_name: "BASSET", job: "Ostéopathie", phone_number: "06.61.25.23.63", email: "basset.aude@gmail.com", address: "13, rue Jean XXIII 44470 CARQUEFOU", symptom: s6, price: 55, description: "L'ostéopathe réalise des manipulations non violentes afin de rétablir la mobilité des articulations, des muscles, des organes internes et des os. Il permet notamment de soulager les maux de dos, les entorses, mais aussi le stress, les règles douloureuses ou encore les migraines.")
+p6 = Pratician.create!(first_name: "Aude", last_name: "BASSET", job: "Ostéopathie", phone_number: "06.61.25.23.63", email: "basset.aude@gmail.com", address: "13, rue Jean XXIII 44470 CARQUEFOU", symptom: s6, price: 55, description: "Aude Basset préserve la santé des enfants et des adultes. La praticienne possède une longue expérience dans ce type de thérapie manuelle. Diplômée de l’institut des hautes études ostéopathiques de Nantes, elle renforce son expérience au sein des services de gynécologie obstétrique du CHU de Nantes et d’oncologie du CH de Saint-Nazaire.")
 
-p7 = Pratician.create!(first_name: "Justine ", last_name: "BONFILLON", job: "Ostéopathie", phone_number: "07.85.20.18.54", email: "justinebasset@gmail.com", address: "30 ter, rue Martin Luther King 44240 LA CHAPELLE SUR ERDRE ", symptom: s7, price: 60, description: "L'ostéopathie est basée sur le principe que la santé et le bien-être d'une personne dépendent de la cohérence de ses os, de ses muscles, de ses organes, de ses ligaments et de son tissu conjonctif afin de maintenir un équilibre dans le corps. Par des manipulations, un ostéopathe peut redonner une capacité de mouvement à toutes les structures du corps. L’ostéopathe va examiner un patient d’un point de vue holistique. Ainsi, il ne traite pas un symptôme ou une maladie mais une personne à part entière. ")
+p7 = Pratician.create!(first_name: "Justine ", last_name: "BONFILLON", job: "Ostéopathie", phone_number: "07.85.20.18.54", email: "justinebasset@gmail.com", address: "30 ter, rue Martin Luther King 44240 LA CHAPELLE SUR ERDRE ", symptom: s7, price: 60, description: "J'ai été diplômée en 2014 après 5 années à l'école d'Ostéopathie IDHEO Nantes. Ostéopathe exclusive, j'utilise dans ma pratique des techniques articulaires, d'énergie musculaire, crâniennes, viscérales, fonctionnelles, tissulaires, structurelles et énergétiques. Le choix des techniques est adapté à chaque patient ainsi qu'à son motif de consultation.Je prends en charge les adultes, les enfants, les nourrissons, et j'accompagne les femmes enceintes.")
 
 p8 = Pratician.create!(first_name: "Daniel", last_name: "CHOPINEAUX", job: "Ostéopathie", phone_number: "07.85.20.18.54", email: "d.chopineaux@gmail.com", address: "2 bis, rue d'Herbauges 44310 SAINT LUMINE DE COUTAIS ", symptom: s8, price: 65, description: "Je vous accueille également aujourd'hui à Saint-Lumine-de-Coutais, ayant intégré un Espace Santé dynamique sur ma commune de vie.J'interviens par ailleurs depuis 2003 à l'école d'ostéopathie de Nantes, IdHEO, en tant que formateur et encadrant clinique, en particulier dans l'approche neuro-végétative, crânienne et pédiatrique.")
 
@@ -67,7 +69,7 @@ p9 = Pratician.create!(first_name: "François ", last_name: "DE BOISJOLLY", job:
 
 p10 = Pratician.create!(first_name: "Gwénaëlle", last_name: "De Buor", job: "Chiropratique", phone_number: "06.23.92.73.23", email: "gwenaelledebuor@yahoo.fr", address: " 47 rue Littré 44100 Nantes", symptom: s10, price: 70, description: "Gwénaëlle de Buor est Chiropratique Diplômé,Son cabinet accueille les adultes, les femmes enceintes, les nourrissons, les enfants, les sportifs, les personnes âgées...Les motifs de consultation sont divers :mal de dos, sciatiques, cruralgie, migraines, maux de tête")
 
-p11 = Pratician.create!(first_name: "Guillaume", last_name: "Martin", job: "Chiropratique", phone_number: "09.67.01.02.52", email: "Martinguillaume@yahoo.com", address: "7 boulevard des sports Vertou (44120)", symptom: s0, price: 60, description: "Présentation.La chiropraxie est une thérapie manuelle pour les soins du dos et des articulations. Elle a pour objet la détection, le traitement et la prévention des dysfonctionnements du squelette et de ses conséquences, notamment au niveau de l'appareil locomoteur. Ces dysfonctions se traduisent notamment par des douleurs ou une limitation du mouvement.")
+p11 = Pratician.create!(first_name: "Guillaume", last_name: "Martin", job: "Chiropratique", phone_number: "09.67.01.02.52", email: "Martinguillaume@yahoo.com", address: "7 boulevard des sports Vertou (44120)", symptom: s0, price: 60, description: "Chiropracteurs diplômés, Martin GUILLAUME accueille sportifs, personnes actives, personnes sédentaires, personnes âgées, adultes dans son cabinet à Vertou.")
 
 p12 = Pratician.create!(first_name: "Linda", last_name: "Moie Meurou", job: "Chiropratique", phone_number: "02 40 45 34 76", email: "lindamoie@gmail.com", address: "8, rue du milan noir Z.A. Brehadour Guérande (44350)", symptom: s1, price: 55, description: "Elle reçoit enfants, nourrissons, musiciens, personnes sédentaires, sportifs, personnes actives.La chiropraxie, également appelée méthode chiropratique ou pratique chiropratique, est une méthode de référence pour traiter les problèmes de dos ou d'articulations.")
 
@@ -93,7 +95,7 @@ p22 = Pratician.create!(first_name: "Manuel", last_name: "Mahe", job: "Sonothér
 
 p23 = Pratician.create!(first_name: "Guyochet", last_name: "Guylène Guais", job: "Sonothérapie", phone_number: "07.68.29.79.74", email: "http://guyleneguaisguyochet.com/", address: "18 rue Vienne 44000 Nantes", symptom: s0, price: 60, description: "Un mixte des différentes techniques sonores. La relation humaine est au coeur de mes préoccupations.J’ai travaillé pendant plus de 30 ans dans le domaine de la communication")
 
-p24 = Pratician.create!(first_name: "Ericka", last_name: "Robine", job: "Sonothérapie", phone_number: "06.43.05.57.68", email: "sonotherapeute.wixsite.com", address: "62 Bd Jean Ingres 44300 St Herblain", symptom: s1, price: 55, description: "La sonothérapie est une thérapie holistique qui utilise le son et les vibrations pour entrer en connexion avec votre corps.")
+p24 = Pratician.create!(first_name: "Ericka", last_name: "Robine", job: "Sonothérapie", phone_number: "06.43.05.57.68", email: "sonotherapeute.wixsite.com", address: "62 Bd Jean Ingres 44300 St Herblain", symptom: s1, price: 55, description: "Aprés avoir étudié la sophrologie à 20 ans, je me suis formée en  hypnose, reiki, guitare/voix, mémoires akashiques, communication universelle, sonothérapie et pratique chamanique. J'ai choisi d'oeuvrer pour accompagner les personnes à révèler ce qu'elles sont au plus profond d'elle-même. Tout cela à travers la création d' espaces de relaxations profondes (voyage sonore), des voyages chamaniques, des rituels par la couleur ( Tribal Make-Up), des cercles de lune ou bien encore des cercles de rêves et les soins chamaniques individuels.")
 
 
 puts "creating pratician done"
@@ -142,6 +144,9 @@ user12.photo.attach(io: file, filename: "Paul.jpg", content_type: "image/jpg")
 
 file = URI.open("https://res.cloudinary.com/dtxv6vrd3/image/upload/v1670317972/34_d3amlx.jpg")
 user13.photo.attach(io: file, filename: "Albert.jpg", content_type: "image/jpg")
+
+file = URI.open("https://res.cloudinary.com/df1pesufu/image/upload/v1669818145/Yann_.L_ua6a9z.jpg")
+user14.photo.attach(io: file, filename: "Yann.jpg", content_type: "image/jpg")
 
 puts "created photos for users"
 
