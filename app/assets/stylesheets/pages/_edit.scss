@@ -50,6 +50,7 @@
 
 .form-check-input{
   background-color: white;
+  margin-left: -0.5em;
 }
 
 .form-check-input:checked{
@@ -69,18 +70,34 @@
 }
 
 
+.arrows_quizz {
 
+  .parent{
+    position: relative;
+  }
+  .child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 40px;
+  }
+}
 
-// .customize_next {
+.carousel-inner{
+  height: 500px;
+  width: 290px;
+  padding: 4px;
+}
 
-//   .parent{
-//     position: relative;
-//   }
-//   .child{
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//   }
+.customizes {
+  left: 35px;
+}
 
-// }
+.questions + label{
+  position: absolute;
+  transform: scale(0);
+  cursor: pointer;
+  /*Button look here*/
+
+}
