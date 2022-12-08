@@ -2,10 +2,6 @@
   <%= link_to "Se déconnecter", destroy_user_session_path, data: {turbo_method: :delete}, class: "log-out" %>
 </div>
 <div class="body-profile">
-  <div class="logout">
-    <%= link_to "Se déconnecter", destroy_user_session_path, data: {turbo_method: :delete}, class: "log-out" %>
-  </div>
-
   <div class="profil d-flex justify-content-center">
     <h3>Votre profil</h3>
 
@@ -19,17 +15,32 @@
     <h3><strong><%= current_user.first_name %> <%= current_user.last_name %></strong></h3>
   </div>
 
-  <% if current_user.result_test == nil %>
-    <%= link_to edit_profile_path do %>
+  <%= link_to edit_profile_path do %>
+    <% if current_user.result_test.present? %>
+      <div class="text-themes">
+        <p>Ton profil thérapeutique :</p>
+        <% if current_user.result_test == "visuel" %>
+          <div class="profile-circle">
+            <%= image_tag "svg/vision_quizz.svg" %>
+          </div>
+          <h4><%= current_user.result_test.upcase %></h4>
+        <% elsif current_user.result_test == "auditif" %>
+          <div class="profile-circle">
+            <%= image_tag "svg/auditif_quizz.svg" %>
+          </div>
+          <h4><%= current_user.result_test.upcase %></h4>
+        <% elsif current_user.result_test == "corporel" %>
+          <div class="profile-circle">
+            <%= image_tag "svg/corporel_quizz.svg" %>
+          </div>
+          <h4><%= current_user.result_test.upcase %></h4>
+        <% end %>
+      </div>
+    <% else %>
         <div class="text-themes">
-          <p>Remplisser le questionnaire pour connaitre votre profil thérapeutique</p>
+          <p>Découvre ton profil thérapeutique</p>
         </div>
     <% end %>
-  <% else %>
-      <div class="text-themes">
-        <p>Vous êtes quelqu'un de <%= current_user.result_test %></p>
-      </div>
-
   <% end %>
 
 
@@ -62,17 +73,18 @@
         <% if favorite_pratician.photo.attached? %>
         <%= cl_image_tag(favorite_pratician.photo.key, class: "avatar-index")%>
         <% end %>
-          <div class="container-card">
-            <h4><%= favorite_pratician.first_name %> <%= favorite_pratician.last_name %></h4>
-            <h5><%= favorite_pratician.job %></h5>
-            <div class="fa-solid fa-location-dot container-position"><h6>  <%= favorite_pratician.address %></h6></div>
-            <div><p>à partir de <%= favorite_pratician.price %>€</p></div>
+        <div class="container-card">
+          <h4><%= favorite_pratician.first_name %> <%= favorite_pratician.last_name %></h4>
+          <h5><%= favorite_pratician.job %></h5>
+          <div class="fa-solid fa-location-dot container-position"><h6>  <%= favorite_pratician.address %></h6></div>
+          <div><p>à partir de <%= favorite_pratician.price %>€</p></div>
       <% end %>
+        </div>
+    <%= button_to favorite_path(Favorite.where(user: current_user, pratician: favorite_pratician).first), method: :delete, class:"heart" do%>
+      <div class="container-heart">
+        <%= image_tag "svg/favorites_add.svg" %>
       </div>
-        <%= button_to favorite_path(Favorite.where(user: current_user, pratician: favorite_pratician).first), method: :delete, class:"heart" do%>
-              <div class="container-heart">
-              <%= image_tag "svg/favorites_add.svg" %>
-              </div>
-        <% end %>
+    <% end %>
     </div>
   <% end %>
+</div>

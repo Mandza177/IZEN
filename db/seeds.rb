@@ -26,7 +26,7 @@ puts "created SYMPTOMS done"
 
 puts "creating users"
 
-user00 = User.create!(first_name: "Adolphe", last_name: "Thiers", email: "adolphe.thiers@gmail.com", password: "azerty", location: "Nantes", result_test: "visuel")
+user00 = User.create!(first_name: "Adolphe", last_name: "Thiers", email: "adolphe.thiers@gmail.com", password: "azerty", location: "Nantes", result_test: "")
 user01 = User.create!(first_name: "Patrice", last_name: "de Mac Mahon", email: "patrice.macmahon@gmail.com", password: "azerty", location: "Nantes", result_test: "corporel")
 user02 = User.create!(first_name: "Jules", last_name: "Grévy", email: "jules.grevy@gmail.com", password: "azerty", location: "Nantes", result_test: "auditif")
 user03 = User.create!(first_name: "Sadi", last_name: "Carnot", email: "sadi.carnot@gmail.com", password: "azerty", location: "Nantes", result_test: "auditif")

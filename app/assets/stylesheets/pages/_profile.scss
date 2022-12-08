@@ -64,10 +64,12 @@ color: #B2B2B2;
 }
 
 .text-themes {
-  text-align: left;
+  text-align: center;
   border:1px solid #242424;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
-  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(167, 167, 167, 0.4);
+  border-radius: 15px;
+  width: 240px;
+  margin: 30px auto;
 
   p {
     margin: 10px;
@@ -106,4 +108,12 @@ color: #B2B2B2;
 
 .logout{
   text-align: right;
+}
+
+.text-themes h4{
+    color: #FEC3A7;
+    letter-spacing: 1px;
+  }
+.profile-circle{
+  border:1px solid red;
 }
