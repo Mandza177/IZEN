@@ -2,40 +2,47 @@
 <hr class="hr-index">
 <% if user_signed_in? %>
 <% else %>
-<div class= "text-sign-in"><p>Inscrivez-vous pour profiter d’un parcours personnalisé et pouvoir enregistrer vos praticiens favoris. Vous aurez aussi accès à nos recommandations et pouvoir écrire des commentaires.</p></div>
-<div class="connect-btn" >
-<a class="btn btn-ghost" href="#">JE M'INCRIS</a>
-</div>
-<% end %>
-<div>
-<% @praticians.each do |pratician| %>
-  <div class="card">
-    <%= link_to pratician_path(pratician)do %>
-      <% if pratician.photo.attached? %>
-      <%= cl_image_tag(pratician.photo.key, class: "avatar-index")%>
-      <% end %>
-    <div class="container-card">
-        <h4><%= pratician.first_name %> <%= pratician.last_name.upcase %></h4>
-        <h5><%= pratician.job %></h5>
-        <div class="fa-solid fa-location-dot container-position"><h6>  <%= pratician.address %></h6></div>
-        <div><p>A partir de <%= pratician.price %>€</p></div>
-    <% end %>
-    </div>
-    <% if Favorite.where(user: current_user, pratician: pratician).first %>
-      <%= button_to favorite_path(Favorite.where(user: current_user, pratician: pratician).first), method: :delete, class:"heart" do%>
-        <div class="container-heart">
-        <%= image_tag "svg/favorites_add.svg" %>
-        </div>
-      <% end %>
-
-    <% else %>
-      <%= button_to pratician_favorites_path(pratician), data:{ turbo_method: :post}, class:"heart" do%>
-        <div class="container-heart">
-        <%= image_tag "svg/heart_favorites.svg" %>
-        </div>
-      <% end %>
-
-    <% end %>
+  <div class= "text-sign-in">
+    <p>Inscrivez-vous pour profiter d’un parcours personnalisé et pouvoir enregistrer vos praticiens favoris. Vous aurez aussi accès à nos recommandations et pouvoir écrire des commentaires.</p>
+  </div>
+  <div class="connect-btn" >
+    <a class="btn btn-ghost" href="#">JE M'INCRIS</a>
   </div>
 <% end %>
+<div>
+  <% if @praticians.present? %>
+    <% @praticians.each do |pratician| %>
+      <div class="card">
+        <%= link_to pratician_path(pratician)do %>
+          <% if pratician.photo.attached? %>
+          <%= cl_image_tag(pratician.photo.key, class: "avatar-index")%>
+          <% end %>
+        <div class="container-card">
+            <h4><%= pratician.first_name %> <%= pratician.last_name.upcase %></h4>
+            <h5><%= pratician.job %></h5>
+            <div class="fa-solid fa-location-dot container-position"><h6>  <%= pratician.address %></h6></div>
+            <div><p>A partir de <%= pratician.price %>€</p></div>
+        <% end %>
+        </div>
+        <% if Favorite.where(user: current_user, pratician: pratician).first %>
+          <%= button_to favorite_path(Favorite.where(user: current_user, pratician: pratician).first), method: :delete, class:"heart" do%>
+            <div class="container-heart">
+            <%= image_tag "svg/favorites_add.svg" %>
+            </div>
+          <% end %>
+
+        <% else %>
+          <%= button_to pratician_favorites_path(pratician), data:{ turbo_method: :post}, class:"heart" do%>
+            <div class="container-heart">
+            <%= image_tag "svg/heart_favorites.svg" %>
+            </div>
+          <% end %>
+
+        <% end %>
+      </div><p>
+    <% end %>
+    <% else %>
+      <div id="no_result">Pas de résultats</div>
+  <% end %>
+</div>
 </div>

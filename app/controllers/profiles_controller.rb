@@ -9,7 +9,7 @@ class ProfilesController < ApplicationController
     # params[:choice]["choice_3"][0]
     # params[:choice]["choice_4"][0]
     if params[:choice]["choice_1"].first == "a" && params[:choice]["choice_2"].first == "a" && params[:choice]["choice_3"].first == "a" && params[:choice]["choice_4"].first == "a"
-      current_user.result_test = "visuelle"
+      current_user.result_test = "auditif"
     end
 
     # params[:choice][choice_1][1]
@@ -25,20 +25,14 @@ class ProfilesController < ApplicationController
     # params[:choice][choice_3][2]
     # params[:choice][choice_4][2]
     if params[:choice]["choice_1"].first == "c" && params[:choice]["choice_2"].first == "c" && params[:choice]["choice_3"].first == "c" && params[:choice]["choice_4"].first == "c"
-      current_user.result_test = "auditif"
+      current_user.result_test = "label"
     end
 
     current_user.save
     redirect_to profile_path
-
   end
 
   def show
     @favorite_praticians = current_user.praticians
-  end
-
-  def destroy
-    session.clear
-    redirect_to login_path
   end
 end

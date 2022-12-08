@@ -10,17 +10,39 @@
 }
 
 .show-back-to-index{
+  float:left;
+  padding:10px;
+}
+
+.show-heart{
   float:right;
   padding:10px;
 }
 
+.heart{
+  background:$color-two;
+  border: none;
+  }
 
-.show-photo{
-  margin: 30px 0 30px 60px;
+.container-photo{
+  display: flex;
+  justify-content: center;
+  }
+
+  .show-photo{
+  margin-top: 30px;
+  margin-bottom: 30px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
+}
+.show-tag{
+  text-align:left;
+  float:right;
+  width : 80%;
+  font-family: "Bree Serif", serif;
+  font-size: 15px;
 }
 
 .show-text h2{
@@ -47,22 +69,15 @@
   width:10%;
 }
 
-.show-tag{
-  text-align:left;
-  float:right;
-  width : 80%;
-  font-family: "Bree Serif", serif;
-  font-size: 15px;
+.show-tag-job{
+  text-decoration: underline;
 }
 
-.show-tag-job{
-  text-align:center;
-  width:170px;
-  height:32px;
-  margin:0 auto;
-  border-radius: 8px;
-  background-color: $color-logo;
-  font-size: 20px;
+.show-tag-job a{
+  font-family: "Bree Serif", serif;
+  text-decoration:none;
+  color: $color-logo;
+  font-size: 21px;
 }
 
 #show-tag-price{
@@ -73,16 +88,9 @@
   text-align:right;
 }
 
-.show-tag-job a{
-  display:block;
-  text-decoration:none;
-  color:#353535;
-}
-
 .pratician_description{
   font-size: 14px;
   color:white;
-  padding: 30px 30px 0 30px;
+  padding: 15px 30px 0px 30px;
   font-style: italic;
-  margin:0;
 }
