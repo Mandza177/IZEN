@@ -50,6 +50,7 @@
 
 .form-check-input{
   background-color: white;
+  margin-left: -0.5em;
 }
 
 .form-check-input:checked{
@@ -69,18 +70,74 @@
 }
 
 
+.arrows_quizz {
+
+  .parent{
+    position: relative;
+  }
+  .child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 40px;
+  }
+}
+
+.carousel-inner{
+  height: 500px;
+  width: 290px;
+  padding: 4px;
+}
+
+.customizes {
+  left: 25px;
+  height: 800px;
+}
+
+.customize_next {
+  height: 800px;
+}
+
+.questions + label{
+  position: absolute;
+  transform: scale(0);
+  cursor: pointer;
+  /*Button look here*/
+
+}
 
 
-// .customize_next {
 
-//   .parent{
-//     position: relative;
-//   }
-//   .child{
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//   }
 
-// }
+.carousel-item {
+
+  .form-check-input {
+    position: absolute;
+    transform: scale(0);
+  }
+
+  .form-check-input + label {
+    display: block;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+    padding: 10px 10px 30px 10px;
+    border: 1px solid $color-text;
+    border-radius: 4px;
+    background-color: $color-one;
+  }
+
+  .form-check-input:checked + label {
+    border: 1px solid #FEC3A7;
+    color: #FEC3A7;
+
+
+  }
+
+  .collection_radio_buttons {
+    margin-top: 22px;
+  }
+}

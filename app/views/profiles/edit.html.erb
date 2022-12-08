@@ -16,7 +16,10 @@
 
                 <div class="carousel-item">
                   <% second_choice = ["a. Je procède par étape pour le résoudre", "b. Je réconforte la personne", "c. J'improvise une solution"] %>
-                  <%= form.input :choice_2, as: :radio_buttons, collection: second_choice, label: "2 - Pour résoudre un conflit je :"%>
+                  <%= form.input :choice_2, as: :radio_buttons, collection: second_choice, collection_wrapper_tag: 'div',
+                  collection_wrapper_class: 'category-wrapper',
+                  item_wrapper_class: 'category-item',
+                  input_html: {class: 'category-selector'}, label: "2 - Pour résoudre un conflit je :"%>
                 </div>
 
                 <div class="carousel-item">
@@ -41,6 +44,7 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                   </button>
+
               </div>
             </div>
           </div>
