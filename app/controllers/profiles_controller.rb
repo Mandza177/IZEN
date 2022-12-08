@@ -36,9 +36,4 @@ class ProfilesController < ApplicationController
   def show
     @favorite_praticians = current_user.praticians
   end
-
-  def destroy
-    session.clear
-    redirect_to login_path
-  end
 end
