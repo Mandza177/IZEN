@@ -1,4 +1,8 @@
 <div class="title-rubrique">
+  <%= link_to "/thematique1" do %>
+  <%= image_tag "svg/just_arrow.svg" %>
+  <% end %>
+
   <h3>Naturopathie</h3>
 </div>
 <div class="container-job">
@@ -8,5 +12,4 @@
 </div>
 <div class= container-btn-job>
   <%= link_to "Trouver Thérapeutes", praticians_path(query: "naturopathie"), class:"find-job" %>
-  <%= link_to "Retour", "thematique1", class:"return" %>
 </div>
