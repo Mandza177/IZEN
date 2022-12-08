@@ -30,14 +30,12 @@
             <%= image_tag "svg/favorites_add.svg" %>
             </div>
           <% end %>
-
         <% else %>
           <%= button_to pratician_favorites_path(pratician), data:{ turbo_method: :post}, class:"heart" do%>
             <div class="container-heart">
             <%= image_tag "svg/heart_favorites.svg" %>
             </div>
           <% end %>
-
         <% end %>
       </div><p>
     <% end %>

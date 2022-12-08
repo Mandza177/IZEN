@@ -64,15 +64,18 @@ color: #B2B2B2;
 }
 
 .text-themes {
-  text-align: left;
-  border:1px solid #242424;
+  text-align: center;
+  // border:2px solid $color-logo;
   box-shadow: 0 0 20px rgba(0,0,0,0.4);
   border-radius: 10px;
 
+
   p {
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
     color: #B2B2B2;
+    background-color: $color-two;
+
   }
 }
 
@@ -106,4 +109,18 @@ color: #B2B2B2;
 
 .logout{
   text-align: right;
+}
+
+.btn-survey{
+  width: 200px;
+  height: 45px;
+  margin-left: 80px;
+  border-radius: 8px;
+  color: black;
+  background-color: #FEC3A7;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
