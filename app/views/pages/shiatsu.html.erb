@@ -1,4 +1,8 @@
 <div class="title-rubrique">
+  <%= link_to "/thematique3" do %>
+  <%= image_tag "svg/just_arrow.svg" %>
+  <% end %>
+
 <h3>Shiatsu</h3>
 </div>
 <div class="container-job">
@@ -9,5 +13,4 @@
 </div>
 <div class= container-btn-job>
   <%= link_to "Trouver Thérapeutes", praticians_path(query: "shiatsu"), class:"find-job" %>
-  <%= link_to "Retour", "thematique3", class:"return" %>
 </div>
