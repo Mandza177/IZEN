@@ -35,8 +35,8 @@ color: #B2B2B2;
 .body-profile {
   background-color: #202020;
   height: 100vh;
-  margin-left: 10px;
-  margin-right: 10px;
+  max-width : 370px;
+  margin : 0 auto;
 }
 
 .picture_name {
@@ -65,16 +65,15 @@ color: #B2B2B2;
 
 .text-themes {
   text-align: left;
+  border:1px solid #242424;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  border-radius: 10px;
+
   p {
     margin: 10px;
     padding: 5px;
     color: #B2B2B2;
   }
-}
-
-.text-themes2 {
-  text-align: center;
-  color: #B2B2B2;
 }
 
 .hr-color {
