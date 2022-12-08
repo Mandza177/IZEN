@@ -20,10 +20,14 @@
   </div>
 
   <% if current_user.result_test == nil %>
-    <%= link_to edit_profile_path do %>
+
         <div class="text-themes">
           <p>Remplisser le questionnaire pour connaitre votre profil thérapeutique</p>
         </div>
+    <%= link_to edit_profile_path do %>
+      <div>
+        <p class="btn-survey">Questionnaire</p>
+      </div>
     <% end %>
   <% else %>
       <div class="text-themes">

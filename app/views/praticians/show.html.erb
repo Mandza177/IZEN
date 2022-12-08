@@ -1,48 +1,41 @@
 <div class="show-container">
   <div class="show-back-to-index">
-    <%= link_to "/praticians" do %>
-      <%= image_tag "svg/cross.svg" %>
-    <% end %>
+    <a class="return" href="javascript:history.back()">
+      <%= image_tag "svg/just_arrow.svg" %>
+    <a>
     </div>
- <div class="show-heart">
-        <% if Favorite.where(user: current_user, pratician: @pratician).first %>
+  <div class="show-heart">
+    <% if Favorite.where(user: current_user, pratician: @pratician).first %>
       <%= button_to favorite_path(Favorite.where(user: current_user, pratician: @pratician).first), method: :delete, class: "heart" do%>
-
         <%= image_tag "svg/heart_full_35.svg" %>
-
       <% end %>
-
     <% else %>
-
       <%= button_to pratician_favorites_path(@pratician), data:{ turbo_method: :post}, class: "heart" do%>
-
         <%= image_tag "svg/heart_empty_35.svg" %>
-
       <% end %>
-
     <% end %>
   </div>
   <div class="container-photo">
-  <% if @pratician.photo.attached? %>
-    <%= cl_image_tag(@pratician.photo.key, class: "show-photo")%>
-  <% end %>
+    <% if @pratician.photo.attached? %>
+      <%= cl_image_tag(@pratician.photo.key, class: "show-photo")%>
+    <% end %>
   </div>
   <div class="show-text">
     <h2>
       <%= @pratician.first_name %>
       <%= @pratician.last_name.upcase %>
     </h2>
-          <div class="show-tag-job">
-            <% if @pratician.job == "Ostéopathie" %>
-              <%= link_to "Ostéopathie", "/osteopathie" %>
-              <% elsif @pratician.job == "Sonothérapie" %>
-                <%= link_to "Sonothérapie", "/sonotherapie" %>
-              <% else %>
-                <%= link_to @pratician.job, "/#{@pratician.job.downcase}" %>
-            <% end %>
-          </div>
+      <div class="show-tag-job">
+        <% if @pratician.job == "Ostéopathie" %>
+          <%= link_to "Ostéopathie", "/osteopathie" %>
+          <% elsif @pratician.job == "Sonothérapie" %>
+            <%= link_to "Sonothérapie", "/sonotherapie" %>
+          <% else %>
+            <%= link_to @pratician.job, "/#{@pratician.job.downcase}" %>
+        <% end %>
+      </div>
     <p class="pratician_description">
-      "<%= @pratician.description %>"
+      <%= @pratician.description %>
     </p>
     <ul>
       <li>
@@ -55,19 +48,19 @@
       <li>
         <%= image_tag "svg/phone.svg" %>
         <div class="show-tag">
-          <%= @pratician.phone_number %>
+          <%= phone_to @pratician.phone_number %>
         </div>
       </li>
       <li>
         <%= image_tag "svg/email.svg" %>
         <div class="show-tag">
-          <%= @pratician.email %>
+        <%= mail_to @pratician.email%>
         </div>
       </li>
       <li>
         <%= image_tag "svg/location_show.svg" %>
         <div class="show-tag">
-          <%= @pratician.address %>
+          <%= link_to @pratician.address, "https://www.google.fr/maps/place/#{@pratician.address}", target: "_blank" %>
         </div>
       </li>
     </ul>
