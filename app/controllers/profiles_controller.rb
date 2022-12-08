@@ -9,7 +9,7 @@ class ProfilesController < ApplicationController
     # params[:choice]["choice_3"][0]
     # params[:choice]["choice_4"][0]
     if params[:choice]["choice_1"].first == "a" && params[:choice]["choice_2"].first == "a" && params[:choice]["choice_3"].first == "a" && params[:choice]["choice_4"].first == "a"
-      current_user.result_test = "visuelle"
+      current_user.result_test = "visuel"
     end
 
     # params[:choice][choice_1][1]
@@ -17,7 +17,7 @@ class ProfilesController < ApplicationController
     # params[:choice][choice_3][1]
     # params[:choice][choice_4][1]
     if params[:choice]["choice_1"].first == "b" && params[:choice]["choice_2"].first == "b" && params[:choice]["choice_3"].first == "b" && params[:choice]["choice_4"].first == "b"
-      current_user.result_test = "corporelle"
+      current_user.result_test = "corporel"
     end
 
     # params[:choice][choice_1][2]
