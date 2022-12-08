@@ -26,7 +26,7 @@
           <% elsif current_user.result_test == "auditif" %>
               <%= image_tag "svg/auditif_quizz.svg" %>
             <h4><%= current_user.result_test.upcase %></h4>
-          <% elsif current_user.result_test == "corporel" %>
+          <% else current_user.result_test == "corporel" %>
               <%= image_tag "svg/corporel_quizz.svg" %>
             <h4><%= current_user.result_test.upcase %></h4>
           <% end %>
