@@ -19,32 +19,23 @@
     <% if current_user.result_test.present? %>
       <div class="text-themes">
         <p>Ton profil thérapeutique :</p>
-        <% if current_user.result_test == "visuel" %>
-          <div class="profile-circle">
-            <%= image_tag "svg/vision_quizz.svg" %>
-          </div>
-          <h4><%= current_user.result_test.upcase %></h4>
-        <% elsif current_user.result_test == "auditif" %>
-          <div class="profile-circle">
-            <%= image_tag "svg/auditif_quizz.svg" %>
-          </div>
-          <h4><%= current_user.result_test.upcase %></h4>
-        <% elsif current_user.result_test == "corporel" %>
-          <div class="profile-circle">
-            <%= image_tag "svg/corporel_quizz.svg" %>
-          </div>
-          <h4><%= current_user.result_test.upcase %></h4>
-        <% end %>
+        <div class = "text-theme-result">
+          <% if current_user.result_test == "visuel" %>
+              <%= image_tag "svg/vision_quizz.svg" %>
+            <h4><%= current_user.result_test.upcase %></h4>
+          <% elsif current_user.result_test == "auditif" %>
+              <%= image_tag "svg/auditif_quizz.svg" %>
+            <h4><%= current_user.result_test.upcase %></h4>
+          <% elsif current_user.result_test == "corporel" %>
+              <%= image_tag "svg/corporel_quizz.svg" %>
+            <h4><%= current_user.result_test.upcase %></h4>
+          <% end %>
+        </div>
       </div>
     <% else %>
-        <div class="text-themes">
+        <div class="text-themes-no-profile">
           <p>Découvre ton profil thérapeutique</p>
         </div>
-    <%= link_to edit_profile_path do %>
-      <div>
-        <p class="btn-survey">Questionnaire</p>
-      </div>
-    <% end %>
   <% end %>
 
 
