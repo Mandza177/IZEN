@@ -3,6 +3,9 @@
     <%= link_to "/praticians" do %>
       <%= image_tag "svg/cross.svg" %>
     <% end %>
+    </div>
+    <div class="show-heart">
+    <%= image_tag "svg/heart_favorites.svg" %>
   </div>
   <% if @pratician.photo.attached? %>
     <%= cl_image_tag(@pratician.photo.key, class: "show-photo")%>
@@ -12,13 +15,7 @@
       <%= @pratician.first_name %>
       <%= @pratician.last_name.upcase %>
     </h2>
-    <p class="pratician_description">
-      "<%= @pratician.description %>"
-    </p>
-    <ul>
-      <li>
-        <%= image_tag "svg/heart_favorites.svg" %>
-        <div class="show-tag">
+      <div class="show-tag">
           <div class="show-tag-job">
             <% if @pratician.job == "Ostéopathie" %>
               <%= link_to "Ostéopathie", "/osteopathie" %>
@@ -26,13 +23,22 @@
                 <%= link_to "Sonothérapie", "/sonotherapie" %>
               <% else %>
                 <%= link_to @pratician.job, "/#{@pratician.job.downcase}" %>
-              <% end %>
+            <% end %>
           </div>
         </div>
+    <p class="pratician_description">
+      "<%= @pratician.description %>"
+    </p>
+    <ul>
+      <li>
+
+
       </li>
       <li id="show-tag-price">
+      <div class="show-price">
         <%= "à partir de " %>
         <strong><%= @pratician.price %> €</strong>
+        </div>
       </li>
       <li>
         <%= image_tag "svg/phone.svg" %>
