@@ -40,6 +40,7 @@ user10 = User.create!(first_name: "Alexandre", last_name: "Millerand", email: "a
 user11 = User.create!(first_name: "Gaston", last_name: "Doumergue", email: "gaston.doumergue@gmail.com", password: "azerty", location: "Nantes", result_test: "auditif")
 user12 = User.create!(first_name: "Paul", last_name: "Doumer", email: "paul.doumer@gmail.com", password: "azerty", location: "Nantes", result_test: "auditif")
 user13 = User.create!(first_name: "Albert", last_name: "Lebrun", email:"albert.lebrun@gmail.com", password: "azerty", location: "Nantes", result_test: "visuel")
+user14 = User.create!(first_name: "Yann", last_name: "Lecocq", email: "yann.lecocq@gmail.com", password: "azerty", location: "Nantes", result_test: "")
 
 puts "created users"
 
