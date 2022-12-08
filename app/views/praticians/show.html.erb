@@ -4,18 +4,34 @@
       <%= image_tag "svg/cross.svg" %>
     <% end %>
     </div>
-    <div class="show-heart">
-    <%= image_tag "svg/heart_favorites.svg" %>
+ <div class="show-heart">
+        <% if Favorite.where(user: current_user, pratician: @pratician).first %>
+      <%= button_to favorite_path(Favorite.where(user: current_user, pratician: @pratician).first), method: :delete, class: "heart" do%>
+
+        <%= image_tag "svg/heart_full_35.svg" %>
+
+      <% end %>
+
+    <% else %>
+
+      <%= button_to pratician_favorites_path(@pratician), data:{ turbo_method: :post}, class: "heart" do%>
+
+        <%= image_tag "svg/heart_empty_35.svg" %>
+
+      <% end %>
+
+    <% end %>
   </div>
+  <div class="container-photo">
   <% if @pratician.photo.attached? %>
     <%= cl_image_tag(@pratician.photo.key, class: "show-photo")%>
   <% end %>
+  </div>
   <div class="show-text">
     <h2>
       <%= @pratician.first_name %>
       <%= @pratician.last_name.upcase %>
     </h2>
-      <div class="show-tag">
           <div class="show-tag-job">
             <% if @pratician.job == "Ostéopathie" %>
               <%= link_to "Ostéopathie", "/osteopathie" %>
@@ -25,17 +41,13 @@
                 <%= link_to @pratician.job, "/#{@pratician.job.downcase}" %>
             <% end %>
           </div>
-        </div>
     <p class="pratician_description">
       "<%= @pratician.description %>"
     </p>
     <ul>
       <li>
-
-
-      </li>
-      <li id="show-tag-price">
-      <div class="show-price">
+      <%= image_tag "svg/euros.svg" %>
+      <div class="show-tag">
         <%= "à partir de " %>
         <strong><%= @pratician.price %> €</strong>
         </div>
