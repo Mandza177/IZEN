@@ -28,6 +28,7 @@
   border-bottom: 2px solid #FEC3A7 !important;
   box-shadow: none;
   border: none;
+  color: $color-text;
 }
 
 #user_password:focus {
@@ -35,6 +36,7 @@
   border-bottom: 2px solid #FEC3A7 !important;
   box-shadow: none;
   border: none;
+  color: $color-text;
 }
 
 
@@ -43,7 +45,15 @@
 }
 
 #user-email {
-  color: $color-job;
+  color: $color-text;
+}
+
+#user_password {
+  color: $color-text;
+}
+
+#user_email {
+  color: $color-text;
 }
 
 .formlog {
