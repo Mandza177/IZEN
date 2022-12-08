@@ -30,7 +30,7 @@ user00 = User.create!(first_name: "Adolphe", last_name: "Thiers", email: "adolph
 user01 = User.create!(first_name: "Patrice", last_name: "de Mac Mahon", email: "patrice.macmahon@gmail.com", password: "azerty", location: "Nantes", result_test: "corporel")
 user02 = User.create!(first_name: "Jules", last_name: "Grévy", email: "jules.grevy@gmail.com", password: "azerty", location: "Nantes", result_test: "auditif")
 user03 = User.create!(first_name: "Sadi", last_name: "Carnot", email: "sadi.carnot@gmail.com", password: "azerty", location: "Nantes", result_test: "auditif")
-user04 = User.create!(first_name: "Jean", last_name: "Casimir-Perier", email: "jean.casimir-perier@gmail.com", password: "azerty", location: "", result_test: "auditif")
+user04 = User.create!(first_name: "Jean", last_name: "Casimir-Perier", email: "jean.casimir-perier@gmail.com", password: "azerty", location: "", result_test: "")
 user05 = User.create!(first_name: "Félix", last_name: "Faure", email: "felix.faure@gmail.com", password: "azerty", location: "Nantes", result_test: "visuel")
 user06 = User.create!(first_name: "Émile", last_name: "Loubet", email: "emile.loubet@gmail.com", password: "azerty", location: "Nantes", result_test: "auditif")
 user07 = User.create!(first_name: "Armand", last_name: "Fallières", email: "armand.fallieres@gmail.com", password: "azerty", location: "Nantes", result_test: "corporel")
@@ -39,7 +39,7 @@ user09 = User.create!(first_name: "Paul", last_name: "Deschanel", email: "paul.d
 user10 = User.create!(first_name: "Alexandre", last_name: "Millerand", email: "alexandre.millerand@gmail.com", password: "azerty", location: "Nantes", result_test: "visuel")
 user11 = User.create!(first_name: "Gaston", last_name: "Doumergue", email: "gaston.doumergue@gmail.com", password: "azerty", location: "Nantes", result_test: "auditif")
 user12 = User.create!(first_name: "Paul", last_name: "Doumer", email: "paul.doumer@gmail.com", password: "azerty", location: "Nantes", result_test: "auditif")
-user13 = User.create!(first_name: "Albert", last_name: "Lebrun", email:"albert.lebrun@gmail.com", password: "azerty", location: "Nantes", result_test: "visuel")
+user13 = User.create!(first_name: "Albert", last_name: "Lebrun", email: "albert.lebrun@gmail.com", password: "azerty", location: "Nantes", result_test: "visuel")
 user14 = User.create!(first_name: "Yann", last_name: "Lecocq", email: "yann.lecocq@gmail.com", password: "azerty", location: "Nantes", result_test: "")
 
 puts "created users"
@@ -94,7 +94,7 @@ p22 = Pratician.create!(first_name: "Manuel", last_name: "Mahe", job: "Sonothér
 
 p23 = Pratician.create!(first_name: "Guyochet", last_name: "Guylène Guais", job: "Sonothérapie", phone_number: "07.68.29.79.74", email: "http://guyleneguaisguyochet.com/", address: "18 rue Vienne 44000 Nantes", symptom: s0, price: 60, description: "Un mixte des différentes techniques sonores. La relation humaine est au coeur de mes préoccupations.J’ai travaillé pendant plus de 30 ans dans le domaine de la communication")
 
-p24 = Pratician.create!(first_name: "Ericka", last_name: "Robine", job: "Sonothérapie", phone_number: "06.43.05.57.68", email: "sonotherapeute.wixsite.com", address: "62 Bd Jean Ingres 44300 St Herblain", symptom: s1, price: 55, description: "Aprés avoir étudié la sophrologie à 20 ans, je me suis formée en  hypnose, reiki, guitare/voix, mémoires akashiques, communication universelle, sonothérapie et pratique chamanique. J'ai choisi d'oeuvrer pour accompagner les personnes à révèler ce qu'elles sont au plus profond d'elle-même. Tout cela à travers la création d' espaces de relaxations profondes (voyage sonore), des voyages chamaniques, des rituels par la couleur ( Tribal Make-Up), des cercles de lune ou bien encore des cercles de rêves et les soins chamaniques individuels.")
+p24 = Pratician.create!(first_name: "Ericka", last_name: "Robine", job: "Sonothérapie", phone_number: "06.43.05.57.68", email: "ericka.robine@gmail.com", address: "62 Bd Jean Ingres 44300 St Herblain", symptom: s1, price: 55, description: "Aprés avoir étudié la sophrologie à 20 ans, je me suis formée en  hypnose, reiki, guitare/voix, mémoires akashiques, communication universelle, sonothérapie et pratique chamanique. J'ai choisi d'oeuvrer pour accompagner les personnes à révèler ce qu'elles sont au plus profond d'elle-même. Tout cela à travers la création d' espaces de relaxations profondes (voyage sonore), des voyages chamaniques, des rituels par la couleur ( Tribal Make-Up), des cercles de lune ou bien encore des cercles de rêves et les soins chamaniques individuels.")
 
 
 puts "creating pratician done"

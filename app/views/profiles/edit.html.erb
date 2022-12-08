@@ -5,7 +5,7 @@
   </div>
 
   <div class="survey">
-      <%= simple_form_for :choice, url: profile_path(id: current_user.id), method: :patch do |form| %>
+<%= simple_form_for :choice, url: profile_path(current_user.id), method: :patch, data: {turbo: false} do |form| %>
         <div class="questions">
             <div id="carouselExampleControls" class="carousel slide">
               <div class="carousel-inner">
@@ -51,29 +51,6 @@
       <%end %>
   </div>
 </div>
-
-
-  <%# <% first_choice = ["a. Entendre le chant des vagues", "b. Ressentir le soleil sur ma peau", "c. Regarder la mer et les détails autour de moi"] %>
-            <%# <%= form.input :choice_1, as: :radio_buttons, collection: first_choice, label: "1 - A la plage ce que j'aime c'est :" %>
-
-
-            <%# <% second_choice = ["a. Je procède par étape pour le résoudre", "b. Je réconforte la personne", "c. J'improvise une solution"] %>
-            <%# <%= form.input :choice_2, as: :radio_buttons, collection: second_choice, label: "2 - Pour résoudre un conflit je :"%>
-
-
-            <%# <% third_choice = ["a. Je crie et je discute après", "b. Tel un volcan j'explose", "c. Je lance des regards noirs"] %>
-            <%# <%= form.input :choice_3, as: :radio_buttons, collection: third_choice, label: "3 - Quand tu es en colère :"%>
-
-
-            <%# <% fourth_choice = ["a. Etre guidé pour me détendre", "b. Un massage à 4 mains", "c. Manger sainement"] %>
-            <%# <%= form.input :choice_4, as: :radio_buttons, collection: fourth_choice, label: "4 - Pour prendre soin de moi :"%>
-            <%# <%= link_to profile_path do %>
-            <%# <%= form.submit "Valider", class: "validates btn btn-primary"%>
-          <%# <% end %>
-
-
-
-
 
 
 
