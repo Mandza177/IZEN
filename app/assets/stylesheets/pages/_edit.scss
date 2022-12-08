@@ -91,7 +91,12 @@
 }
 
 .customizes {
-  left: 35px;
+  left: 25px;
+  height: 800px;
+}
+
+.customize_next {
+  height: 800px;
 }
 
 .questions + label{
@@ -100,4 +105,39 @@
   cursor: pointer;
   /*Button look here*/
 
+}
+
+
+
+
+.carousel-item {
+
+  .form-check-input {
+    position: absolute;
+    transform: scale(0);
+  }
+
+  .form-check-input + label {
+    display: block;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+    padding: 10px 10px 30px 10px;
+    border: 1px solid $color-text;
+    border-radius: 4px;
+    background-color: $color-one;
+  }
+
+  .form-check-input:checked + label {
+    border: 1px solid #FEC3A7;
+    color: #FEC3A7;
+
+
+  }
+
+  .collection_radio_buttons {
+    margin-top: 22px;
+  }
 }
