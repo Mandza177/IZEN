@@ -7,10 +7,7 @@
   border-radius: 50%;
 }
 
-.title-informations {
-margin-top: 20px;
-color: #B2B2B2;
-}
+
 
 .informations {
   h3 {
@@ -82,12 +79,13 @@ color: #B2B2B2;
   border-bottom: 1px solid #FEC3A7;
   display: block;
   margin-bottom: 10px;
-  width: 350px;
+  width: 330px;
   margin-left: 20px;
 }
 
 .title-favorite {
   color: #B2B2B2;
+  font-size: 28px;
 }
 
 .location-wrapper {
@@ -103,6 +101,7 @@ color: #B2B2B2;
 
   h3 {
     margin: 0px;
+    font-size: 18px;
   }
 }
 
