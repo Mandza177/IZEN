@@ -30,9 +30,12 @@
       <% end %>
     </div>
 
-    <%= link_to edit_profile_path(current_user) do %>
-    <div class="formulaire-home ">
-      <h4>Découvre ton profil thérapeutique</h4>
-    </div>
+    <% if user_signed_in? %>
+      <%= link_to edit_profile_path(current_user) do %>
+        <div class="formulaire-home ">
+          <h4>Découvre ton profil</h4>
+        </div>
+      <% end %>
     <% end %>
+
 </div>
