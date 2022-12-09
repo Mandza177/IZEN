@@ -18,7 +18,7 @@
   <%= link_to edit_profile_path do %>
     <% if current_user.result_test.present? %>
       <div class="text-themes">
-        <p>Ton profil thérapeutique :</p>
+        <p>Ton profil thérapeutique</p>
         <div class = "text-theme-result">
           <% if current_user.result_test == "visuel" %>
               <%= image_tag "svg/vision_quizz.svg" %>
@@ -40,9 +40,7 @@
 
 
   <div class="profile-info">
-    <div class="title-informations">
-      <p><ins> Vos informations: </ins></p>
-    </div>
+
 
     <div class="informations w-100">
       <div class="location-wrapper">
@@ -57,7 +55,7 @@
     </div>
 
     <div class="title-favorite">
-      <p><ins> Vos favoris:</ins></p>
+      <p><ins>Vos favoris</ins></p>
     </div>
   </div>
 
