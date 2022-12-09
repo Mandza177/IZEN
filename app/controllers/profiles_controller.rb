@@ -30,7 +30,15 @@ class ProfilesController < ApplicationController
       current_user.result_test = "visuel"
     end
     current_user.save!
-    redirect_to profile_path
+
+    if current_user.result_test == "auditif"
+      redirect_to thematique2_path
+    elsif current_user.result_test == "corporel"
+      redirect_to thematique3_path
+    elsif current_user.result_test == "visuel"
+      redirect_to thematique1_path
+
+    end
   end
 
   def show
